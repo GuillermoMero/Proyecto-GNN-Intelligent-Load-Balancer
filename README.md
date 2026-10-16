@@ -31,3 +31,40 @@ Sigue estos pasos para levantar el entorno completo en tu máquina:
 ```bash
 git clone <URL_DE_TU_REPOSITORIO>
 cd gnn-load-balancer
+
+
+2. Levantar la infraestructura con Docker Compose
+Asegúrate de tener Docker Desktop abierto y ejecuta en la raíz del proyecto:
+
+Bash
+docker compose up --build -d
+3. Verificar los servicios
+Puedes comprobar que las peticiones se distribuyen correctamente entre las réplicas ejecutando:
+
+Bash
+curl http://localhost:8080/users
+curl http://localhost:8080/auth
+curl http://localhost:8080/products
+📈 Pruebas de Carga y Simulación de Tráfico (Locust)
+Para simular escenarios de carga (baja, alta y concurrencia) sobre el balanceador:
+
+Crear y activar un entorno virtual de Python:
+
+Bash
+python -m venv venv
+source venv/Scripts/Activate  # En Windows (PowerShell: .\venv\Scripts\Activate)
+Instalar Locust:
+
+Bash
+pip install locust
+Ejecutar la herramienta apuntando al archivo de pruebas:
+
+Bash
+locust -f locust/locustfile.py --host http://localhost:8080
+Abre tu navegador web y accede a http://localhost:8089 para configurar los usuarios concurrentes y visualizar las métricas en tiempo real.
+
+🛑 Detener el Proyecto
+Para apagar los contenedores de manera limpia y liberar puertos:
+
+Bash
+docker compose down
