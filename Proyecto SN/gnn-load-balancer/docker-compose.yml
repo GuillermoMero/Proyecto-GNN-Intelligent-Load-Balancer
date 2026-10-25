@@ -1,66 +1,44 @@
 version: '3.8'
 
 services:
-  # 1. El Balanceador de Carga Inteligente (Punto de entrada)
+  auth-svc:
+    build: ./services/auth-svc   # <--- Asegúrate que apunte a auth-svc
+    ports:
+      - "5001:5001"
+    environment:
+      - REDIS_HOST=redis
+
+  user-svc-1:
+    build: ./services/user-svc   # <--- Asegúrate que apunte a user-svc
+    environment:
+      - REDIS_HOST=redis
+      - REPLICA_ID=user-svc-1
+      - SIMULATE_CONGESTION=false
+
+  user-svc-2:
+    build: ./services/user-svc   # <--- Misma carpeta user-svc
+    environment:
+      - REDIS_HOST=redis
+      - REPLICA_ID=user-svc-2
+      - SIMULATE_CONGESTION=true   # Réplica congestionada para la demo
+
+  course-svc:
+    build: ./services/course-svc # <--- Asegúrate que apunte a course-svc (o product-svc según cómo lo tengas)
+    ports:
+      - "5003:5003"
+    environment:
+      - REDIS_HOST=redis
+
   load-balancer:
-    build: ./load-balancer
-    container_name: load-balancer
+    build: ./load-balancer        # <--- Apunta a tu carpeta del balanceador
     ports:
       - "8080:8080"
     environment:
-      - AUTH_URL=http://auth-svc:5000
-      - USER_INSTANCES=http://user-svc-1:5000,http://user-svc-2:5000
-      - PRODUCT_URL=http://product-svc:5000
-    depends_on:
-      - auth-svc
-      - user-svc-1
-      - user-svc-2
-      - product-svc
-      - redis
-    networks:
-      - cloud-net
+      - AUTH_URL=http://auth-svc:5001
+      - COURSE_URL=http://course-svc:5003
+      - USER_INSTANCES=http://user-svc-1:5002,http://user-svc-2:5002
 
-  # 2. Servicio de Autenticación
-  auth-svc:
-    build: ./services/auth
-    container_name: auth-svc
-    networks:
-      - cloud-net
-
-  # 3. Instancia 1 del Servicio de Usuarios
-  user-svc-1:
-    build: ./services/user
-    container_name: user-svc-1
-    environment:
-      - INSTANCE_ID=user-svc-1
-    networks:
-      - cloud-net
-
-  # 4. Instancia 2 del Servicio de Usuarios (Clave para el balanceo)
-  user-svc-2:
-    build: ./services/user
-    container_name: user-svc-2
-    environment:
-      - INSTANCE_ID=user-svc-2
-    networks:
-      - cloud-net
-
-  # 5. Servicio de Productos / Catálogo
-  product-svc:
-    build: ./services/product
-    container_name: product-svc
-    networks:
-      - cloud-net
-
-  # 6. Redis para métricas o estado compartido
   redis:
     image: redis:alpine
-    container_name: redis-cache
     ports:
       - "6379:6379"
-    networks:
-      - cloud-net
-
-networks:
-  cloud-net:
-    driver: bridge

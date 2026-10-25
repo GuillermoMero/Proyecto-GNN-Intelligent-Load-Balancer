@@ -1,18 +1,51 @@
 from locust import HttpUser, task, between
 
-class CloudSystemUser(HttpUser):
-    # Tiempo de espera entre peticiones por usuario simulado (1 a 3 segundos)
-    wait_time = between(1, 3)
-
-    @task(3)
-    def test_users_endpoint(self):
-        # Tarea con mayor peso (3) para probar el balanceo de carga (Round Robin)
-        self.client.get("/users")
+class RoundRobinSGAUser(HttpUser):
+    weight = 1
+    wait_time = between(1, 2)
 
     @task(1)
-    def test_auth_endpoint(self):
-        self.client.get("/auth")
+    def login(self):
+        self.client.post("/api/sga/login", json={"user": "estudiante", "pass": "123"})
+
+    @task(2)
+    def get_record_rr(self):
+        self.client.post("/api/rr/student/record", json={"student_id": "12345"})
 
     @task(1)
-    def test_products_endpoint(self):
-        self.client.get("/products")
+    def enroll_course(self):
+        self.client.post("/api/courses/enroll", json={"course_code": "FIEC0100"})
+
+
+class LeastConnectionsSGAUser(HttpUser):
+    weight = 1
+    wait_time = between(1, 2)
+
+    @task(1)
+    def login(self):
+        self.client.post("/api/sga/login", json={"user": "estudiante", "pass": "123"})
+
+    @task(2)
+    def get_record_lc(self):
+        self.client.post("/api/lc/student/record", json={"student_id": "12345"})
+
+    @task(1)
+    def enroll_course(self):
+        self.client.post("/api/courses/enroll", json={"course_code": "FIEC0100"})
+
+
+class GNNIntelligentSGAUser(HttpUser):
+    weight = 1
+    wait_time = between(1, 2)
+
+    @task(1)
+    def login(self):
+        self.client.post("/api/sga/login", json={"user": "estudiante", "pass": "123"})
+
+    @task(2)
+    def get_record_gnn(self):
+        self.client.post("/api/gnn/student/record", json={"student_id": "12345"})
+
+    @task(1)
+    def enroll_course(self):
+        self.client.post("/api/courses/enroll", json={"course_code": "FIEC0100"})
