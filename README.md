@@ -26,3 +26,68 @@ Abre tu terminal y ejecuta el siguiente comando para clonar el proyecto:
 ```bash
 git clone <URL-DEL-REPOSITORIO>
 cd gnn-load-balancer
+2. Levantar la infraestructura con Docker Compose
+El sistema simula el ecosistema del SGA mediante múltiples microservicios orquestados en Docker. Para compilar las imágenes y poner en marcha los contenedores en segundo plano, ejecuta:
+
+Bash
+docker compose up --build -d
+(Nota: Este proceso compilará el balanceador inteligente, los microservicios de autenticación, usuarios, cursos y la base de datos Redis. La primera compilación puede tomar unos minutos).
+
+3. Verificar que los contenedores estén activos
+Comprueba que todos los servicios de la simulación estén corriendo correctamente ejecutando:
+
+Bash
+docker ps
+Deberías ver en la lista los contenedores correspondientes al balanceador, las réplicas del sistema de usuarios del SGA (user-svc-1, user-svc-2), autenticación, cursos y Redis.
+
+🚀 Uso y Pruebas de Rendimiento (Locust)
+El proyecto incluye un escenario de pruebas en Locust (locust/locustfile.py) para evaluar el rendimiento concurrente de las tres estrategias de balanceo simulando el tráfico de los estudiantes de la ESPOL.
+
+Pasos para ejecutar las pruebas de carga:
+Instalar dependencias de Locust (en tu máquina local):
+
+Bash
+pip install locust
+Iniciar Locust:
+Navega a la carpeta donde se encuentra el archivo de pruebas y ejecuta:
+
+Bash
+locust -f locust/locustfile.py
+Acceder a la interfaz web de Locust:
+Abre tu navegador y entra a: http://localhost:8089
+
+Configurar la prueba en la interfaz:
+
+Number of users: 20 (o la cantidad deseada de usuarios concurrentes simulando estudiantes).
+
+Spawn rate: 2 (usuarios por segundo).
+
+Host: http://localhost:8080 (dirección del balanceador).
+
+Haz clic en Start swarming para iniciar la prueba.
+
+🏗️ Arquitectura del Sistema
+load-balancer: Proxy inverso en Flask que expone los endpoints de enrutamiento y aloja el modelo de IA basado en NumPy para la toma de decisiones.
+
+auth-svc: Microservicio de autenticación de usuarios de la simulación del SGA.
+
+user-svc-1 & user-svc-2: Réplicas del microservicio de gestión de usuarios y récords académicos. (Nota: user-svc-2 incluye un retraso artificial de 400ms para simular congestión o saturación del servidor).
+
+course-svc: Microservicio para la gestión e inscripción de materias/cursos.
+
+redis: Almacenamiento en memoria para estados y contadores de la simulación.
+
+📊 Endpoints de Comparación Disponibles
+El balanceador expone diferentes rutas para evaluar cada estrategia de enrutamiento en tiempo real bajo la simulación:
+
+POST /api/rr/student/record — Enrutamiento estático (Round Robin).
+
+POST /api/lc/student/record — Enrutamiento reactivo (Least Connections).
+
+POST /api/gnn/student/record — Enrutamiento inteligente (GNN-RL con NumPy).
+
+🛑 Detener el Proyecto
+Para apagar y limpiar todos los contenedores de la simulación de manera segura, ejecuta en la raíz del proyecto:
+
+Bash
+docker compose down
