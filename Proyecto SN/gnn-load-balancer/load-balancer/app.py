@@ -1,11 +1,48 @@
 import os
 import threading
 import time
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, render_template
 import requests
 from intelligent_router import IntelligentLoadBalancerEnv
 
 app = Flask(__name__)
+
+# --- Ruta Principal: Carga la Interfaz Web del SGA de la ESPOL ---
+@app.route('/')
+def home():
+    return render_template('sga_portal.html')
+
+# --- Ruta para el Dashboard de Monitoreo de la IA ---
+@app.route('/dashboard')
+def dashboard():
+    return render_template('dashboard.html')
+
+# --- Endpoint de Métricas para alimentar el Dashboard en tiempo real ---
+@app.route("/api/metrics", methods=["GET"])
+def get_metrics():
+    with gnn_lock, counter_lock:
+        state = gnn_env.get_state()
+        metrics = {
+            "instances": USER_INSTANCES,
+            "active_connections": active_connections,
+            "total_requests": request_counters,
+            "last_state": state.tolist() if hasattr(state, "tolist") else state,
+        }
+    return jsonify(metrics)
+
+# --- Ruta de Información de la API ---
+@app.route('/api/info', methods=["GET"])
+def api_info():
+    return jsonify({
+        "message": "GNN Intelligent Load Balancer - SGA ESPOL (Entorno RL Activo)",
+        "endpoints_disponibles": [
+            "/api/sga/login",
+            "/api/rr/student/record (Round Robin)",
+            "/api/lc/student/record (Least Connections)",
+            "/api/gnn/student/record (GNN + RL Intelligent)",
+            "/api/courses/enroll"
+        ],
+    })
 
 # URLs de los servicios configuradas en el docker-compose
 AUTH_URL = os.getenv("AUTH_URL", "http://auth-svc:5001")
@@ -21,6 +58,10 @@ rr_lock = threading.Lock()
 # --- Estado para Least Connections ---
 active_connections = {instance: 0 for instance in USER_INSTANCES}
 lc_lock = threading.Lock()
+
+# --- Contador histórico de peticiones por nodo ---
+request_counters = {instance: 0 for instance in USER_INSTANCES}
+counter_lock = threading.Lock()
 
 # --- Entorno Inteligente (GNN + RL) ---
 gnn_env = IntelligentLoadBalancerEnv(USER_INSTANCES)
@@ -59,6 +100,10 @@ def proxy_round_robin():
         data = resp.json()
         data["load_balancer"] = "Round-Robin"
         data["handled_by_instance"] = target_instance
+        
+        with counter_lock:
+            request_counters[target_instance] += 1
+            
         return jsonify(data), resp.status_code
     except Exception as e:
         return jsonify({"error": f"Fallo al conectar con {target_instance}", "detalles": str(e)}), 500
@@ -81,6 +126,10 @@ def proxy_least_connections():
         data = resp.json()
         data["load_balancer"] = "Least-Connections"
         data["handled_by_instance"] = target_instance
+        
+        with counter_lock:
+            request_counters[target_instance] += 1
+            
         return jsonify(data), resp.status_code
     except Exception as e:
         return jsonify({"error": f"Fallo al conectar con {target_instance}", "detalles": str(e)}), 500
@@ -116,6 +165,10 @@ def proxy_gnn_intelligent():
         data["load_balancer"] = "GNN-RL-Intelligent"
         data["handled_by_instance"] = target_instance
         data["reward"] = reward
+        
+        with counter_lock:
+            request_counters[target_instance] += 1
+            
         return jsonify(data), resp.status_code
     except Exception as e:
         with gnn_lock:
@@ -135,20 +188,6 @@ def proxy_courses():
         return jsonify(resp.json()), resp.status_code
     except Exception as e:
         return jsonify({"error": str(e)}), 500
-
-
-@app.route("/", methods=["GET"])
-def home():
-    return jsonify({
-        "message": "GNN Intelligent Load Balancer - SGA ESPOL (Entorno RL Activo)",
-        "endpoints_disponibles": [
-            "/api/sga/login",
-            "/api/rr/student/record (Round Robin)",
-            "/api/lc/student/record (Least Connections)",
-            "/api/gnn/student/record (GNN + RL Intelligent)",
-            "/api/courses/enroll"
-        ],
-    })
 
 
 if __name__ == "__main__":

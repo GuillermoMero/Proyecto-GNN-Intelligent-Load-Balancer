@@ -1,0 +1,20 @@
+graph TD
+    %% Capa de Cliente e Interfaz
+    Client["Navegador / Usuario<br>SGA Portal & Dashboard"] -->|HTTP / Puerto 8080| LB["load-balancer<br>(Flask Proxy + GNN-RL Engine)"]
+
+    %% Red Docker y Microservicios
+    subgraph Docker_Network ["Red Docker Compose (Microservicios)"]
+        LB -->|"/api/sga/login"| Auth["auth-svc<br>(Puerto 5001)"]
+        LB -->|"/api/courses/enroll"| Course["course-svc<br>(Puerto 5003)"]
+        
+        subgraph User_Pool ["Pool de Réplicas (Balanceo de Carga)"]
+            LB -->|"Round Robin / Least Connections / GNN-RL"| User1["user-svc-1<br>(Puerto 5000)"]
+            LB -->|"Round Robin / Least Connections / GNN-RL"| User2["user-svc-2<br>(Puerto 5000)"]
+        end
+    end
+
+    style LB fill:#38bdf8,stroke:#0369a1,stroke-width:2px,color:#000
+    style User1 fill:#34d399,stroke:#047857,stroke-width:2px,color:#000
+    style User2 fill:#34d399,stroke:#047857,stroke-width:2px,color:#000
+    style Auth fill:#fbbf24,stroke:#b45309,stroke-width:2px,color:#000
+    style Course fill:#fbbf24,stroke:#b45309,stroke-width:2px,color:#000
