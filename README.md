@@ -10,7 +10,7 @@ El proyecto permite comparar cuantitativamente el desempeño de enrutadores trad
 
 La infraestructura está completamente containerizada mediante **Docker Compose** y consta de 5 microservicios independientes.
 
-![Arquitectura del Sistema](Arquitectura.jfif)
+![Arquitectura del Sistema](Arquitectura.png)
 
 ### Componentes Principales:
 1. **`load-balancer` (Puerto 8080):** Núcleo en Flask que aloja las interfaces web (`/` y `/dashboard`), ejecuta los algoritmos de balanceo (Round Robin, Least Connections y GNN-RL) y expone la API de métricas en tiempo real (`/api/metrics`).
