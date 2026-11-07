@@ -8,55 +8,40 @@ El proyecto permite comparar cuantitativamente el desempeño de enrutadores trad
 
 ## 🏛️ Arquitectura del Sistema
 
-La infraestructura está completamente containerizada mediante **Docker Compose** y consta de 5 microservicios independientes:
+La infraestructura está completamente containerizada mediante **Docker Compose** y consta de 5 microservicios independientes.
 
+![Arquitectura del Sistema](Arquitectura.jfif)
+
+### Componentes Principales:
 1. **`load-balancer` (Puerto 8080):** Núcleo en Flask que aloja las interfaces web (`/` y `/dashboard`), ejecuta los algoritmos de balanceo (Round Robin, Least Connections y GNN-RL) y expone la API de métricas en tiempo real (`/api/metrics`).
 2. **`user-svc-1` (Puerto interno 5000):** Réplica 1 del microservicio de consulta de récord académico y datos de estudiantes.
 3. **`user-svc-2` (Puerto interno 5000):** Réplica 2 del microservicio de usuarios.
 4. **`auth-svc` (Puerto interno 5001):** Microservicio para autenticación e inicio de sesión en el SGA.
 5. **`course-svc` (Puerto interno 5003):** Microservicio para inscripción de materias y oferta académica.
 
-### Diagrama de Red de Microservicios
+---
 
-```mermaid
-graph TD
-    %% Capa de Cliente e Interfaz
-    Client["Navegador / Usuario<br>SGA Portal & Dashboard"] -->|HTTP / Puerto 8080| LB["load-balancer<br>(Flask Proxy + GNN-RL Engine)"]
+## 🚀 Algoritmos de Balanceo Implementados
 
-    %% Red Docker y Microservicios
-    subgraph Docker_Network ["Red Docker Compose (Microservicios)"]
-        LB -->|"/api/sga/login"| Auth["auth-svc<br>(Puerto 5001)"]
-        LB -->|"/api/courses/enroll"| Course["course-svc<br>(Puerto 5003)"]
-        
-        subgraph User_Pool ["Pool de Réplicas (Balanceo de Carga)"]
-            LB -->|"Round Robin / Least Connections / GNN-RL"| User1["user-svc-1<br>(Puerto 5000)"]
-            LB -->|"Round Robin / Least Connections / GNN-RL"| User2["user-svc-2<br>(Puerto 5000)"]
-        end
-    end
+* **Round Robin (`/api/rr/student/record`):** Asigna peticiones de forma cíclica y secuencial a los nodos disponibles.
+* **Least Connections (`/api/lc/student/record`):** Evalúa cuál instancia posee el menor número de conexiones activas en el instante de la solicitud.
+* **GNN-RL Inteligente (`/api/gnn/student/record`):** Agente de Aprendizaje por Refuerzo basado en el estado del grafo de la red. Toma decisiones de enrutamiento considerando la latencia histórica, saturación y penalizaciones por tiempo de respuesta.
 
-    style LB fill:#38bdf8,stroke:#0369a1,stroke-width:2px,color:#000
-    style User1 fill:#34d399,stroke:#047857,stroke-width:2px,color:#000
-    style User2 fill:#34d399,stroke:#047857,stroke-width:2px,color:#000
-    style Auth fill:#fbbf24,stroke:#b45309,stroke-width:2px,color:#000
-    style Course fill:#fbbf24,stroke:#b45309,stroke-width:2px,color:#000
-🚀 Algoritmos de Balanceo Implementados
-Round Robin (/api/rr/student/record): Asigna peticiones de forma cíclica y secuencial a los nodos disponibles.
+---
 
-Least Connections (/api/lc/student/record): Evalúa cuál instancia posee el menor número de conexiones activas en el instante de la solicitud.
+## 🛠️ Requisitos Previos
 
-GNN-RL Inteligente (/api/gnn/student/record): Agente de Aprendizaje por Refuerzo basado en el estado del grafo de la red (IntelligentLoadBalancerEnv). Toma decisiones de enrutamiento considerando la latencia histórica, saturación y penalizaciones por tiempo de respuesta.
+* **Docker** y **Docker Compose**
+* **Python 3.9+** (opcional, para ejecutar el script de benchmark localmente)
 
-🛠️ Requisitos Previos
-Docker y Docker Compose
+---
 
-Python 3.9+ (opcional, para ejecutar el script de benchmark localmente)
+## 📦 Instalación y Despliegue
 
-📦 Instalación y Despliegue
-Clonar el repositorio:
-
-Bash
-git clone [https://github.com/TU_USUARIO/gnn-load-balancer.git](https://github.com/TU_USUARIO/gnn-load-balancer.git)
-cd gnn-load-balancer
+1. **Clonar el repositorio:**
+   ```bash
+   git clone [https://github.com/TU_USUARIO/gnn-load-balancer.git](https://github.com/TU_USUARIO/gnn-load-balancer.git)
+   cd gnn-load-balancer
 Levantar los microservicios con Docker Compose:
 
 Bash
@@ -107,5 +92,5 @@ Latencia de respuesta individual y promedio (ms).
 Recompensa (Reward) obtenida por el agente RL.
 
 👥 Integrantes
-Guillermo Mero - Telempática / FIEC / ESPOL
-Saúl Quiroz - Telemática /FIEC / ESPOL
+Guillermo Mero - Telemática / FIEC / ESPOL
+Saul Quiroz - Telemática / FIEC / ESPOL
