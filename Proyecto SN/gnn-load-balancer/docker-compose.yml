@@ -2,35 +2,33 @@ version: '3.8'
 
 services:
   auth-svc:
-    build: ./services/auth-svc   # <--- Asegúrate que apunte a auth-svc
+    build: ./services/auth-svc
     ports:
       - "5001:5001"
     environment:
       - REDIS_HOST=redis
 
   user-svc-1:
-    build: ./services/user-svc   # <--- Asegúrate que apunte a user-svc
+    build: ./services/user-svc
     environment:
       - REDIS_HOST=redis
       - REPLICA_ID=user-svc-1
       - SIMULATE_CONGESTION=false
 
   user-svc-2:
-    build: ./services/user-svc   # <--- Misma carpeta user-svc
+    build: ./services/user-svc   
     environment:
       - REDIS_HOST=redis
       - REPLICA_ID=user-svc-2
       - SIMULATE_CONGESTION=true   # Réplica congestionada para la demo
 
   course-svc:
-    build: ./services/course-svc # <--- Asegúrate que apunte a course-svc (o product-svc según cómo lo tengas)
-    ports:
-      - "5003:5003"
+    build: ./services/course-svc 
     environment:
       - REDIS_HOST=redis
 
   load-balancer:
-    build: ./load-balancer        # <--- Apunta a tu carpeta del balanceador
+    build: ./load-balancer   
     ports:
       - "8080:8080"
     environment:
