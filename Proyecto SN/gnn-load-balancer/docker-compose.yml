@@ -1,42 +1,98 @@
-version: '3.8'
-
 services:
+  redis:
+    image: redis:7-alpine
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
   auth-svc:
     build: ./services/auth-svc
-    ports:
-      - "5001:5001"
     environment:
       - REDIS_HOST=redis
+    depends_on:
+      redis:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "python", "-c", "import socket; socket.create_connection(('localhost', 5001), 2)"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+    deploy:
+      resources:
+        limits:
+          cpus: "0.5"
+          memory: 256M
+
+  course-svc:
+    build: ./services/course-svc
+    environment:
+      - REDIS_HOST=redis
+    depends_on:
+      redis:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "python", "-c", "import socket; socket.create_connection(('localhost', 5003), 2)"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+    deploy:
+      resources:
+        limits:
+          cpus: "0.5"
+          memory: 256M
 
   user-svc-1:
     build: ./services/user-svc
+    ports:
+      - "5011:5000"   # acceso desde el host para /admin/congestion y /metrics
     environment:
-      - REDIS_HOST=redis
       - REPLICA_ID=user-svc-1
       - SIMULATE_CONGESTION=false
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:5000/health', timeout=2)"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+    deploy:
+      resources:
+        limits:
+          cpus: "0.5"
+          memory: 256M
 
   user-svc-2:
-    build: ./services/user-svc   
+    build: ./services/user-svc
+    ports:
+      - "5012:5000"
     environment:
-      - REDIS_HOST=redis
       - REPLICA_ID=user-svc-2
-      - SIMULATE_CONGESTION=true   # Réplica congestionada para la demo
-
-  course-svc:
-    build: ./services/course-svc 
-    environment:
-      - REDIS_HOST=redis
+      - SIMULATE_CONGESTION=false   # se activa por escenario con POST /admin/congestion
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:5000/health', timeout=2)"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+    deploy:
+      resources:
+        limits:
+          cpus: "0.5"
+          memory: 256M
 
   load-balancer:
-    build: ./load-balancer   
+    build: ./load-balancer
     ports:
       - "8080:8080"
     environment:
       - AUTH_URL=http://auth-svc:5001
       - COURSE_URL=http://course-svc:5003
-      - USER_INSTANCES=http://user-svc-1:5002,http://user-svc-2:5002
-
-  redis:
-    image: redis:alpine
-    ports:
-      - "6379:6379"
+      - USER_INSTANCES=http://user-svc-1:5000,http://user-svc-2:5000
+    depends_on:
+      auth-svc:
+        condition: service_healthy
+      course-svc:
+        condition: service_healthy
+      user-svc-1:
+        condition: service_healthy
+      user-svc-2:
+        condition: service_healthy

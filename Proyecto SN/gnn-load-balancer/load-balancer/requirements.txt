@@ -1,4 +1,3 @@
-Flask
-requests
-numpy
-redis
+flask==3.0.3
+requests==2.32.3
+numpy==1.26.4
