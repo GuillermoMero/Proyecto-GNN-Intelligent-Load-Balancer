@@ -3,24 +3,42 @@ Router inteligente GNN + RL (primera versión, P1).
 
 Idea
 ----
-* Los servicios se representan como un GRAFO: nodos = instancias/servicios,
-  aristas = relaciones de dependencia (o de réplica del mismo servicio).
-* Cada nodo tiene un vector de estado: [conexiones activas, latencia EMA, CPU, RAM].
+* El sistema se representa como un GRAFO DE DEPENDENCIAS:
+      nodos   = servicios / instancias (gateway, auth-svc, course-svc, redis,
+                user-svc-1, user-svc-2)
+      aristas = dependencias reales (gateway -> auth, auth -> redis, ...)
+                + una arista entre réplicas del mismo servicio.
+* Cada nodo tiene un vector de estado:
+      [conexiones activas, latencia EMA, CPU, RAM, es_réplica]
 * Una GNN de 2 capas (estilo GraphSAGE, implementada en NumPy) hace message
-  passing: cada nodo combina sus propias features con el promedio de sus vecinos.
-  La salida es un Q-value por nodo = recompensa esperada de enviar la petición ahí.
+  passing: cada nodo combina sus propias features con el promedio de sus
+  vecinos. Con 2 capas una réplica "ve" hasta 2 saltos: el gateway (1 salto)
+  y, a través de él, auth, course y la otra réplica (2 saltos).
+* La salida es un Q-value por nodo = recompensa esperada de enviar la petición
+  ahí. Solo las réplicas de user-svc son acciones válidas (máscara de acciones);
+  el resto de nodos aportan contexto.
 * Aprendizaje online (Q-learning con gamma = 0, es decir, bandido contextual):
   tras cada petición se calcula el reward real y se actualizan los pesos con
   backpropagation sobre el nodo elegido.
-* Política: softmax sobre los Q-values (temperatura tau) + un epsilon pequeño
-  con decaimiento. Con Q muy distintos (réplica congestionada) es casi greedy;
-  con Q parecidos reparte el tráfico en lugar de "elegir un favorito" por ruido.
+* Reward = -latencia/100 - LAMBDA * cola_al_elegir.
+  El segundo término es el "costo de congestión": enviar a una réplica con
+  cola no solo afecta a esta petición, también retrasa a las que ya esperan.
+  Sin él, el agente era "egoísta": evitaba la réplica lenta pero saturaba la
+  sana.
+* Política: softmax sobre los Q-values de las réplicas (temperatura tau) + un
+  epsilon pequeño con decaimiento.
+* Estado obsoleto: si una réplica deja de recibir tráfico, su latencia EMA
+  decae con el tiempo; así el agente la vuelve a probar y detecta si se
+  recuperó.
 
 Limitaciones declaradas (se abordan en P2): sin atención propia, reward fijo,
 sin horizonte temporal (gamma = 0), grafo pequeño.
 """
 
+import os
 import threading
+import time
+
 import numpy as np
 
 
@@ -40,7 +58,7 @@ class GraphQNetwork:
 
     # ---- forward ---------------------------------------------------------
     def forward(self, X, cache=False):
-        M1 = self.An @ X
+        M1 = self.An @ X                      # mensaje: promedio de los vecinos
         Z1 = X @ self.Ws1 + M1 @ self.Wn1 + self.b1
         H1 = np.maximum(0, Z1)
         M2 = self.An @ H1
@@ -82,25 +100,57 @@ class GraphQNetwork:
             setattr(self, k, getattr(self, k) - lr * scale * v)
 
 
-class IntelligentLoadBalancerEnv:
-    FEATURES = ["active_connections", "avg_latency_ms", "cpu_percent", "mem_mb"]
-    # Escalas para normalizar cada feature a ~[0, 1]
-    SCALES = np.array([10.0, 500.0, 100.0, 256.0])
+def build_service_graph(user_instances):
+    """
+    Topología del SGA (coincide con docker-compose.yml):
 
-    def __init__(self, instances, edges=None, seed=42, hidden_dim=16, lr=0.02,
-                 eps_start=0.10, eps_min=0.02, eps_decay=0.995, tau=0.2):
-        self.instances = list(instances)
-        self.n = len(self.instances)
+        gateway(LB) ── auth-svc ──┐
+            │    └──── course-svc ─┴── redis
+            ├── user-svc-1
+            └── user-svc-2      (user-svc-1 ── user-svc-2: réplicas)
+
+    Devuelve (nombres_de_nodos, aristas, índices_de_réplicas).
+    """
+    nodes = ["gateway", "auth-svc", "course-svc", "redis"] + list(user_instances)
+    idx = {n: i for i, n in enumerate(nodes)}
+    edges = [
+        (idx["gateway"], idx["auth-svc"]),
+        (idx["gateway"], idx["course-svc"]),
+        (idx["auth-svc"], idx["redis"]),
+        (idx["course-svc"], idx["redis"]),
+    ]
+    replicas = [idx[u] for u in user_instances]
+    for r in replicas:                         # el gateway depende de cada réplica
+        edges.append((idx["gateway"], r))
+    for i in range(len(replicas)):             # réplicas del mismo servicio
+        for j in range(i + 1, len(replicas)):
+            edges.append((replicas[i], replicas[j]))
+    return nodes, edges, replicas
+
+
+class IntelligentLoadBalancerEnv:
+    FEATURES = ["active_connections", "avg_latency_ms", "cpu_percent", "mem_mb", "is_replica"]
+    # Escalas para normalizar cada feature a ~[0, 1]
+    SCALES = np.array([10.0, 500.0, 100.0, 256.0, 1.0])
+
+    def __init__(self, instances, seed=42, hidden_dim=16, lr=0.02,
+                 eps_start=0.10, eps_min=0.02, eps_decay=0.995, tau=0.3,
+                 congestion_lambda=float(os.getenv("GNN_CONGESTION_LAMBDA", "0.1")),
+                 stale_after_s=5.0, stale_decay=0.95):
+        self.instances = list(instances)                 # réplicas de user-svc
+        self.nodes, self.edges, self.action_nodes = build_service_graph(self.instances)
+        self.n = len(self.nodes)
         self.seed = seed
         self.hidden_dim = hidden_dim
         self.lr = lr
         self.tau = tau
         self.eps_start, self.eps_min, self.eps_decay = eps_start, eps_min, eps_decay
-        # Por defecto: todas las réplicas del servicio son vecinas entre sí.
-        # Al agregar grades-svc/course-svc, aquí se añaden sus aristas reales.
-        self.edges = edges if edges is not None else [
-            (i, j) for i in range(self.n) for j in range(i + 1, self.n)
-        ]
+        # Costo de congestión: cuánto se castiga cada petición ya en cola
+        self.congestion_lambda = congestion_lambda
+        # Estado obsoleto: tras `stale_after_s` sin tráfico, la latencia EMA
+        # de la réplica se multiplica por `stale_decay` en cada llamada
+        self.stale_after_s = stale_after_s
+        self.stale_decay = stale_decay
         self._lock = threading.RLock()
         self.reset()
 
@@ -125,60 +175,99 @@ class IntelligentLoadBalancerEnv:
             self.epsilon = self.eps_start
             self.steps = 0
             self.reward_ema = 0.0
+            now = time.time()
             self.metrics = {
-                inst: {"active_connections": 0, "avg_latency_ms": 0.0,
-                       "cpu_percent": 0.0, "mem_mb": 0.0}
-                for inst in self.instances
+                n: {"active_connections": 0, "avg_latency_ms": 0.0,
+                    "cpu_percent": 0.0, "mem_mb": 0.0,
+                    "is_replica": 1.0 if i in self.action_nodes else 0.0,
+                    "last_seen": now}
+                for i, n in enumerate(self.nodes)
             }
 
     # ---- estado ----------------------------------------------------------
     def _features(self):
-        X = np.array([[self.metrics[i][f] for f in self.FEATURES] for i in self.instances])
+        X = np.array([[self.metrics[n][f] for f in self.FEATURES] for n in self.nodes])
         return np.clip(X / self.SCALES, 0.0, 2.0)
 
-    def set_remote(self, instance, cpu_percent, mem_mb):
-        """CPU y RAM reportadas por el /metrics de cada réplica (polling)."""
+    def set_remote(self, node, cpu_percent, mem_mb):
+        """CPU y RAM reportadas por el /metrics de cada nodo (polling)."""
         with self._lock:
-            self.metrics[instance]["cpu_percent"] = float(cpu_percent)
-            self.metrics[instance]["mem_mb"] = float(mem_mb)
+            if node in self.metrics:
+                self.metrics[node]["cpu_percent"] = float(cpu_percent)
+                self.metrics[node]["mem_mb"] = float(mem_mb)
+
+    def set_latency(self, node, latency_ms):
+        """Latencia medida externamente (ej: redis, medida por auth-svc)."""
+        with self._lock:
+            if node in self.metrics:
+                self.metrics[node]["avg_latency_ms"] = float(latency_ms)
+
+    def decay_stale(self):
+        """
+        Réplicas sin tráfico reciente: su latencia EMA decae poco a poco.
+        Así su Q sube y el agente la vuelve a probar; si sigue lenta, la
+        latencia real la vuelve a subir de inmediato.
+        """
+        with self._lock:
+            now = time.time()
+            for i in self.action_nodes:
+                m = self.metrics[self.nodes[i]]
+                if m["active_connections"] == 0 and now - m["last_seen"] > self.stale_after_s:
+                    m["avg_latency_ms"] *= self.stale_decay
+
+    @staticmethod
+    def _ema(m, lat):
+        m["avg_latency_ms"] = lat if m["avg_latency_ms"] == 0.0 \
+            else m["avg_latency_ms"] * 0.8 + lat * 0.2
 
     # ---- decisión --------------------------------------------------------
     def select_action(self):
-        """Devuelve (instancia, contexto). El contexto se usa luego en learn()."""
+        """Elige una réplica. Devuelve (instancia, contexto para learn())."""
         with self._lock:
             X = self._features()
+            cand = self.action_nodes                      # máscara: solo réplicas
             if self.rng.rand() < self.epsilon:
-                a = int(self.rng.randint(self.n))
+                a = int(cand[self.rng.randint(len(cand))])
             else:
-                q = self.model.forward(X)
-                # softmax con temperatura: prob. alta para el mejor Q, pero no 100 %
-                z = (q - q.max()) / self.tau
+                q = self.model.forward(X)[cand]           # Q solo de las réplicas
+                z = (q - q.max()) / self.tau              # softmax con temperatura
                 p = np.exp(z)
                 p /= p.sum()
-                a = int(self.rng.choice(self.n, p=p))
-            self.metrics[self.instances[a]]["active_connections"] += 1
-            return self.instances[a], (X, a)
+                a = int(cand[self.rng.choice(len(cand), p=p)])
+            m = self.metrics[self.nodes[a]]
+            queue = m["active_connections"]               # cola ANTES de sumar esta
+            m["active_connections"] += 1
+            self.metrics["gateway"]["active_connections"] += 1
+            return self.nodes[a], (X, a, queue)
 
     def on_complete(self, instance, latency_ms, ok):
-        """Se llama al terminar la petición (éxito o error)."""
+        """Se llama UNA vez al terminar la petición (éxito o error)."""
         with self._lock:
-            m = self.metrics[instance]
-            m["active_connections"] = max(0, m["active_connections"] - 1)
             # Un error cuenta como latencia alta (penalización), NUNCA como 0 ms
             lat = float(latency_ms) if ok else max(float(latency_ms), 1000.0)
-            m["avg_latency_ms"] = lat if m["avg_latency_ms"] == 0.0 \
-                else m["avg_latency_ms"] * 0.8 + lat * 0.2
+            now = time.time()
+            for name in (instance, "gateway"):
+                m = self.metrics[name]
+                m["active_connections"] = max(0, m["active_connections"] - 1)
+                self._ema(m, lat)
+                m["last_seen"] = now
 
     # ---- aprendizaje -----------------------------------------------------
     @staticmethod
     def compute_reward(latency_ms, ok=True):
+        """Reward base (solo latencia). El costo de cola se suma en learn()."""
         if not ok:
             return -10.0
         return -min(float(latency_ms), 1000.0) / 100.0  # 400 ms -> -4.0
 
     def learn(self, ctx, reward):
-        """Q-learning con gamma = 0: acerca Q(nodo elegido) al reward observado."""
-        X, a = ctx
+        """
+        Q-learning con gamma = 0: acerca Q(nodo elegido) al reward observado.
+        Al reward base se le resta el costo de congestión (lambda * cola).
+        """
+        X, a, queue = ctx
+        if reward > -10.0:                                # los errores ya tienen -10
+            reward = reward - self.congestion_lambda * queue
         with self._lock:
             g, err = self.model.grads(X, a, reward)
             self.model.apply(g, self.lr)
@@ -193,13 +282,18 @@ class IntelligentLoadBalancerEnv:
             X = self._features()
             q = self.model.forward(X)
             return {
+                "nodes": self.nodes,
                 "instances": self.instances,
                 "features": self.FEATURES,
-                "node_state": self.metrics,
-                "q_values": {i: float(v) for i, v in zip(self.instances, q)},
+                # last_seen es interno: no se muestra
+                "node_state": {n: {k: v for k, v in m.items() if k != "last_seen"}
+                               for n, m in self.metrics.items()},
+                "q_values": {self.nodes[i]: float(q[i]) for i in self.action_nodes},
+                "edges": [[self.nodes[i], self.nodes[j]] for i, j in self.edges],
                 "adjacency": self.adjacency().tolist(),
                 "epsilon": round(self.epsilon, 4),
                 "tau": self.tau,
+                "congestion_lambda": self.congestion_lambda,
                 "steps": self.steps,
                 "reward_ema": round(self.reward_ema, 3),
             }

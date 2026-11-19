@@ -7,6 +7,14 @@ from flask import Flask, jsonify, request, render_template
 
 from intelligent_router import IntelligentLoadBalancerEnv
 
+# psutil: CPU/RAM del propio balanceador (nodo "gateway" del grafo)
+try:
+    import psutil
+    _proc = psutil.Process(os.getpid())
+    _proc.cpu_percent(interval=None)  # primera llamada de calibración
+except Exception:
+    _proc = None
+
 app = Flask(__name__)
 
 # ---------------------------------------------------------------------------
@@ -51,16 +59,29 @@ def count(instance, algo):
 
 
 # ---------------------------------------------------------------------------
-# Poller: lee CPU/RAM de cada réplica (/metrics) y alimenta el estado del grafo
+# Poller: lee /metrics de TODOS los nodos del grafo y alimenta su estado
 # ---------------------------------------------------------------------------
 def poll_metrics():
+    # nombre del nodo en el grafo -> URL base del servicio
+    targets = {"auth-svc": AUTH_URL, "course-svc": COURSE_URL}
+    targets.update({u: u for u in USER_INSTANCES})
+    s = requests.Session()
     while True:
-        for inst in USER_INSTANCES:
+        for node, url in targets.items():
             try:
-                m = requests.get(inst + "/metrics", timeout=1).json()
-                gnn_env.set_remote(inst, m.get("cpu_percent", 0.0), m.get("mem_mb", 0.0))
+                m = s.get(url + "/metrics", timeout=1).json()
+                gnn_env.set_remote(node, m.get("cpu_percent", 0.0), m.get("mem_mb", 0.0))
+                # auth-svc mide la latencia de su dependencia (redis)
+                if node == "auth-svc" and "redis_ping_ms" in m:
+                    gnn_env.set_latency("redis", m["redis_ping_ms"])
             except Exception:
                 pass
+        # el propio balanceador es el nodo "gateway"
+        if _proc is not None:
+            gnn_env.set_remote("gateway", _proc.cpu_percent(interval=None),
+                               _proc.memory_info().rss / (1024 * 1024))
+        # réplicas sin tráfico reciente: su latencia decae para re-probarlas
+        gnn_env.decay_stale()
         time.sleep(POLL_INTERVAL)
 
 
@@ -230,25 +251,26 @@ def proxy_least_connections():
 def proxy_gnn_intelligent():
     target, ctx = gnn_env.select_action()  # suma 1 conexión activa al elegido
     start = time.perf_counter()
+    ok = False
     try:
         resp = forward_to_user(target)
-        elapsed_ms = (time.perf_counter() - start) * 1000.0
         ok = resp.status_code == 200
-
-        reward = gnn_env.compute_reward(elapsed_ms, ok)
-        gnn_env.on_complete(target, elapsed_ms, ok)
-        gnn_env.learn(ctx, reward)
-
-        data = resp.json()
-        data.update(load_balancer="GNN-RL-Intelligent", handled_by_instance=target,
-                    reward=round(reward, 3))
-        count(target, "gnn")
-        return jsonify(data), resp.status_code
+        try:
+            data = resp.json()
+        except ValueError:                      # la réplica no devolvió JSON
+            data = {"raw": resp.text[:200]}
+        data.update(load_balancer="GNN-RL-Intelligent", handled_by_instance=target)
+        if ok:
+            count(target, "gnn")
+        out = (jsonify(data), resp.status_code)
     except Exception as e:
+        out = (jsonify({"error": f"Fallo al conectar con {target}", "detalles": str(e)}), 502)
+    finally:
+        # se ejecuta UNA sola vez, pase lo que pase
         elapsed_ms = (time.perf_counter() - start) * 1000.0
-        gnn_env.on_complete(target, elapsed_ms, False)
-        gnn_env.learn(ctx, gnn_env.compute_reward(elapsed_ms, False))
-        return jsonify({"error": f"Fallo al conectar con {target}", "detalles": str(e)}), 502
+        gnn_env.on_complete(target, elapsed_ms, ok)
+        gnn_env.learn(ctx, gnn_env.compute_reward(elapsed_ms, ok))
+    return out
 
 
 if __name__ == "__main__":
