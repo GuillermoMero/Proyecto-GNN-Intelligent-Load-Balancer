@@ -1,0 +1,101 @@
+scenario,rep,algo,ts,replica,cpu_percent,mem_mb
+1. Carga baja,1,Least Connections,1795056892.731,user-svc-1,7.2,31.57
+1. Carga baja,1,Least Connections,1795056892.758,user-svc-2,0.0,31.13
+1. Carga baja,1,Least Connections,1795056893.289,user-svc-1,18.5,31.58
+1. Carga baja,1,Least Connections,1795056893.324,user-svc-2,17.1,31.13
+1. Carga baja,1,Round Robin,1795056894.841,user-svc-1,0.0,31.58
+1. Carga baja,1,Round Robin,1795056894.87,user-svc-2,0.0,31.13
+1. Carga baja,1,GNN-RL,1795056896.387,user-svc-1,2.9,31.58
+1. Carga baja,1,GNN-RL,1795056896.404,user-svc-2,0.0,31.13
+1. Carga baja,1,GNN-RL,1795056896.918,user-svc-1,3.7,31.58
+1. Carga baja,1,GNN-RL,1795056896.947,user-svc-2,35.0,31.2
+1. Carga baja,2,GNN-RL,1795056898.461,user-svc-1,0.0,31.58
+1. Carga baja,2,GNN-RL,1795056898.484,user-svc-2,2.4,31.23
+1. Carga baja,2,Least Connections,1795056899.998,user-svc-1,1.1,31.59
+1. Carga baja,2,Least Connections,1795056900.014,user-svc-2,0.0,31.25
+1. Carga baja,2,Round Robin,1795056901.53,user-svc-1,2.6,31.59
+1. Carga baja,2,Round Robin,1795056901.556,user-svc-2,0.0,31.27
+2. Carga alta,1,Least Connections,1795056907.096,user-svc-1,1.8,31.64
+2. Carga alta,1,Least Connections,1795056907.166,user-svc-2,5.3,31.36
+2. Carga alta,1,Least Connections,1795056907.681,user-svc-1,23.8,31.64
+2. Carga alta,1,Least Connections,1795056907.696,user-svc-2,0.0,31.36
+2. Carga alta,1,Least Connections,1795056908.209,user-svc-1,20.7,31.64
+2. Carga alta,1,Least Connections,1795056908.233,user-svc-2,22.6,31.37
+2. Carga alta,1,GNN-RL,1795056909.751,user-svc-1,0.0,31.65
+2. Carga alta,1,GNN-RL,1795056909.792,user-svc-2,18.7,31.37
+2. Carga alta,1,GNN-RL,1795056910.317,user-svc-1,5.3,31.65
+2. Carga alta,1,GNN-RL,1795056910.346,user-svc-2,23.4,31.37
+2. Carga alta,1,GNN-RL,1795056911.036,user-svc-1,27.9,31.69
+2. Carga alta,1,GNN-RL,1795056911.083,user-svc-2,16.9,31.37
+2. Carga alta,1,GNN-RL,1795056911.641,user-svc-1,13.6,31.69
+2. Carga alta,1,GNN-RL,1795056911.657,user-svc-2,22.2,31.37
+2. Carga alta,1,GNN-RL,1795056912.18,user-svc-1,24.1,31.7
+2. Carga alta,1,GNN-RL,1795056912.204,user-svc-2,63.8,31.37
+2. Carga alta,1,Round Robin,1795056913.721,user-svc-1,0.0,31.7
+2. Carga alta,1,Round Robin,1795056913.743,user-svc-2,2.0,31.39
+2. Carga alta,1,Round Robin,1795056914.276,user-svc-1,19.8,31.7
+2. Carga alta,1,Round Robin,1795056914.321,user-svc-2,14.0,31.39
+2. Carga alta,1,Round Robin,1795056914.882,user-svc-1,24.3,31.71
+2. Carga alta,1,Round Robin,1795056914.939,user-svc-2,21.4,31.39
+2. Carga alta,1,Round Robin,1795056915.478,user-svc-1,24.9,31.73
+2. Carga alta,1,Round Robin,1795056915.511,user-svc-2,71.2,31.39
+2. Carga alta,1,Round Robin,1795056916.028,user-svc-1,18.1,31.75
+2. Carga alta,1,Round Robin,1795056916.037,user-svc-2,18.8,31.39
+2. Carga alta,2,Least Connections,1795056917.562,user-svc-1,147.8,31.75
+2. Carga alta,2,Least Connections,1795056917.596,user-svc-2,0.0,31.39
+2. Carga alta,2,Least Connections,1795056918.124,user-svc-1,10.7,31.75
+2. Carga alta,2,Least Connections,1795056918.177,user-svc-2,15.7,31.39
+2. Carga alta,2,Least Connections,1795056918.719,user-svc-1,0.0,31.75
+2. Carga alta,2,Least Connections,1795056918.87,user-svc-2,16.3,31.39
+2. Carga alta,2,Least Connections,1795056919.405,user-svc-1,24.4,31.76
+2. Carga alta,2,Least Connections,1795056919.453,user-svc-2,19.4,31.39
+2. Carga alta,2,GNN-RL,1795056920.97,user-svc-1,28.6,31.76
+2. Carga alta,2,GNN-RL,1795056920.998,user-svc-2,0.0,31.39
+2. Carga alta,2,GNN-RL,1795056921.517,user-svc-1,12.8,31.76
+2. Carga alta,2,GNN-RL,1795056921.531,user-svc-2,18.7,31.39
+2. Carga alta,2,GNN-RL,1795056922.051,user-svc-1,30.7,31.76
+2. Carga alta,2,GNN-RL,1795056922.072,user-svc-2,16.6,31.4
+2. Carga alta,2,GNN-RL,1795056922.625,user-svc-1,12.2,31.79
+2. Carga alta,2,GNN-RL,1795056922.638,user-svc-2,14.6,31.4
+2. Carga alta,2,Round Robin,1795056924.156,user-svc-1,1.1,31.77
+2. Carga alta,2,Round Robin,1795056924.204,user-svc-2,1.0,31.4
+2. Carga alta,2,Round Robin,1795056924.715,user-svc-1,19.9,31.77
+2. Carga alta,2,Round Robin,1795056924.758,user-svc-2,20.3,31.4
+2. Carga alta,2,Round Robin,1795056925.292,user-svc-1,19.7,31.78
+2. Carga alta,2,Round Robin,1795056925.309,user-svc-2,16.1,31.4
+3. Congestionado,1,Least Connections,1795056931.68,user-svc-1,3.8,31.81
+3. Congestionado,1,Least Connections,1795056931.731,user-svc-2,12.4,31.94
+3. Congestionado,1,Least Connections,1795056932.251,user-svc-1,38.5,31.81
+3. Congestionado,1,Least Connections,1795056932.266,user-svc-2,25.3,31.98
+3. Congestionado,1,Least Connections,1795056932.782,user-svc-1,11.3,31.81
+3. Congestionado,1,Least Connections,1795056932.796,user-svc-2,7.6,31.97
+3. Congestionado,1,Round Robin,1795056934.31,user-svc-1,0.0,31.81
+3. Congestionado,1,Round Robin,1795056934.452,user-svc-2,7.9,31.95
+3. Congestionado,1,Round Robin,1795056934.969,user-svc-1,13.1,31.81
+3. Congestionado,1,Round Robin,1795056935.154,user-svc-2,24.9,32.29
+3. Congestionado,1,Round Robin,1795056935.666,user-svc-1,8.6,31.81
+3. Congestionado,1,Round Robin,1795056935.676,user-svc-2,43.9,32.34
+3. Congestionado,1,GNN-RL,1795056937.192,user-svc-1,0.0,31.81
+3. Congestionado,1,GNN-RL,1795056937.247,user-svc-2,11.6,32.07
+3. Congestionado,1,GNN-RL,1795056937.771,user-svc-1,29.4,31.86
+3. Congestionado,1,GNN-RL,1795056937.787,user-svc-2,25.9,32.09
+3. Congestionado,1,GNN-RL,1795056938.295,user-svc-1,4.8,31.86
+3. Congestionado,1,GNN-RL,1795056938.303,user-svc-2,0.0,32.1
+3. Congestionado,2,Round Robin,1795056939.82,user-svc-1,0.0,31.86
+3. Congestionado,2,Round Robin,1795056939.911,user-svc-2,5.1,32.09
+3. Congestionado,2,Round Robin,1795056940.418,user-svc-1,0.0,31.88
+3. Congestionado,2,Round Robin,1795056940.58,user-svc-2,40.5,32.44
+3. Congestionado,2,Round Robin,1795056941.088,user-svc-1,7.5,31.89
+3. Congestionado,2,Round Robin,1795056941.149,user-svc-2,46.8,32.45
+3. Congestionado,2,Least Connections,1795056942.666,user-svc-1,0.0,31.89
+3. Congestionado,2,Least Connections,1795056942.726,user-svc-2,12.7,32.16
+3. Congestionado,2,Least Connections,1795056943.258,user-svc-1,22.0,31.89
+3. Congestionado,2,Least Connections,1795056943.29,user-svc-2,21.4,32.2
+3. Congestionado,2,Least Connections,1795056943.798,user-svc-1,22.5,31.89
+3. Congestionado,2,Least Connections,1795056943.806,user-svc-2,28.7,32.21
+3. Congestionado,2,GNN-RL,1795056945.321,user-svc-1,0.0,31.89
+3. Congestionado,2,GNN-RL,1795056945.386,user-svc-2,0.0,32.17
+3. Congestionado,2,GNN-RL,1795056945.976,user-svc-1,22.3,31.91
+3. Congestionado,2,GNN-RL,1795056946.023,user-svc-2,0.0,32.17
+3. Congestionado,2,GNN-RL,1795056946.717,user-svc-1,26.2,31.91
+3. Congestionado,2,GNN-RL,1795056946.858,user-svc-2,6.0,32.17

@@ -1,0 +1,1681 @@
+scenario,rep,algo,t,latency_ms,ok,status,replica
+1. Carga baja,1,Least Connections,14122.6097,48.52,1,200,user-svc-1
+1. Carga baja,1,Least Connections,14122.6119,82.31,1,200,user-svc-2
+1. Carga baja,1,Least Connections,14122.6154,93.27,1,200,user-svc-1
+1. Carga baja,1,Least Connections,14122.6225,83.11,1,200,user-svc-2
+1. Carga baja,1,Least Connections,14122.6238,118.67,1,200,user-svc-1
+1. Carga baja,1,Least Connections,14122.6584,68.94,1,200,user-svc-2
+1. Carga baja,1,Least Connections,14122.6943,60.81,1,200,user-svc-2
+1. Carga baja,1,Least Connections,14122.7057,66.57,1,200,user-svc-1
+1. Carga baja,1,Least Connections,14122.7088,108.77,1,200,user-svc-2
+1. Carga baja,1,Least Connections,14122.7274,53.06,1,200,user-svc-1
+1. Carga baja,1,Least Connections,14122.7426,46.9,1,200,user-svc-2
+1. Carga baja,1,Least Connections,14122.7553,60.93,1,200,user-svc-2
+1. Carga baja,1,Least Connections,14122.7723,68.89,1,200,user-svc-1
+1. Carga baja,1,Least Connections,14122.7808,68.28,1,200,user-svc-1
+1. Carga baja,1,Least Connections,14122.7896,47.48,1,200,user-svc-2
+1. Carga baja,1,Least Connections,14122.8164,53.27,1,200,user-svc-1
+1. Carga baja,1,Least Connections,14122.8177,59.98,1,200,user-svc-2
+1. Carga baja,1,Least Connections,14122.8371,71.67,1,200,user-svc-1
+1. Carga baja,1,Least Connections,14122.8413,70.67,1,200,user-svc-1
+1. Carga baja,1,Least Connections,14122.8491,46.25,1,200,user-svc-2
+1. Carga baja,1,Least Connections,14122.8698,52.32,1,200,user-svc-2
+1. Carga baja,1,Least Connections,14122.8779,72.85,1,200,user-svc-2
+1. Carga baja,1,Least Connections,14122.8955,66.41,1,200,user-svc-1
+1. Carga baja,1,Least Connections,14122.9089,45.84,1,200,user-svc-2
+1. Carga baja,1,Least Connections,14122.9121,64.35,1,200,user-svc-1
+1. Carga baja,1,Least Connections,14122.9222,49.44,1,200,user-svc-2
+1. Carga baja,1,Least Connections,14122.9508,59.27,1,200,user-svc-1
+1. Carga baja,1,Least Connections,14122.9549,123.49,1,200,user-svc-2
+1. Carga baja,1,Least Connections,14122.962,60.1,1,200,user-svc-1
+1. Carga baja,1,Least Connections,14122.9717,108.96,1,200,user-svc-2
+1. Carga baja,1,Least Connections,14122.9766,57.77,1,200,user-svc-1
+1. Carga baja,1,Least Connections,14123.0102,75.23,1,200,user-svc-1
+1. Carga baja,1,Least Connections,14123.0222,52.77,1,200,user-svc-1
+1. Carga baja,1,Least Connections,14123.0344,71.72,1,200,user-svc-2
+1. Carga baja,1,Least Connections,14123.075,96.63,1,200,user-svc-2
+1. Carga baja,1,Least Connections,14123.0785,87.82,1,200,user-svc-2
+1. Carga baja,1,Least Connections,14123.0807,77.1,1,200,user-svc-1
+1. Carga baja,1,Least Connections,14123.0855,98.13,1,200,user-svc-1
+1. Carga baja,1,Least Connections,14123.1064,95.03,1,200,user-svc-1
+1. Carga baja,1,Least Connections,14123.1579,77.0,1,200,user-svc-1
+1. Carga baja,1,Round Robin,14124.7428,28.92,1,200,user-svc-1
+1. Carga baja,1,Round Robin,14124.7436,43.27,1,200,user-svc-2
+1. Carga baja,1,Round Robin,14124.7453,39.16,1,200,user-svc-1
+1. Carga baja,1,Round Robin,14124.7519,56.42,1,200,user-svc-2
+1. Carga baja,1,Round Robin,14124.7573,62.69,1,200,user-svc-1
+1. Carga baja,1,Round Robin,14124.7719,46.16,1,200,user-svc-2
+1. Carga baja,1,Round Robin,14124.7845,40.67,1,200,user-svc-1
+1. Carga baja,1,Round Robin,14124.787,63.38,1,200,user-svc-2
+1. Carga baja,1,Round Robin,14124.8084,59.19,1,200,user-svc-1
+1. Carga baja,1,Round Robin,14124.8181,40.54,1,200,user-svc-2
+1. Carga baja,1,Round Robin,14124.8201,61.12,1,200,user-svc-1
+1. Carga baja,1,Round Robin,14124.8253,54.31,1,200,user-svc-2
+1. Carga baja,1,Round Robin,14124.8505,76.67,1,200,user-svc-1
+1. Carga baja,1,Round Robin,14124.8587,46.57,1,200,user-svc-1
+1. Carga baja,1,Round Robin,14124.8677,62.98,1,200,user-svc-2
+1. Carga baja,1,Round Robin,14124.8797,55.69,1,200,user-svc-2
+1. Carga baja,1,Round Robin,14124.8813,83.02,1,200,user-svc-1
+1. Carga baja,1,Round Robin,14124.9054,56.2,1,200,user-svc-2
+1. Carga baja,1,Round Robin,14124.9273,73.86,1,200,user-svc-1
+1. Carga baja,1,Round Robin,14124.9309,72.7,1,200,user-svc-2
+1. Carga baja,1,Round Robin,14124.9356,42.43,1,200,user-svc-1
+1. Carga baja,1,Round Robin,14124.9617,62.1,1,200,user-svc-2
+1. Carga baja,1,Round Robin,14124.9644,44.73,1,200,user-svc-1
+1. Carga baja,1,Round Robin,14124.9781,51.06,1,200,user-svc-2
+1. Carga baja,1,Round Robin,14125.0013,40.59,1,200,user-svc-1
+1. Carga baja,1,Round Robin,14125.0038,63.3,1,200,user-svc-2
+1. Carga baja,1,Round Robin,14125.0093,46.14,1,200,user-svc-1
+1. Carga baja,1,Round Robin,14125.0239,47.18,1,200,user-svc-2
+1. Carga baja,1,Round Robin,14125.0292,26.48,1,200,user-svc-1
+1. Carga baja,1,Round Robin,14125.0419,53.1,1,200,user-svc-2
+1. Carga baja,1,Round Robin,14125.0555,67.98,1,200,user-svc-2
+1. Carga baja,1,Round Robin,14125.0558,64.77,1,200,user-svc-1
+1. Carga baja,1,Round Robin,14125.0672,65.34,1,200,user-svc-1
+1. Carga baja,1,Round Robin,14125.0711,60.5,1,200,user-svc-2
+1. Carga baja,1,Round Robin,14125.0952,55.2,1,200,user-svc-1
+1. Carga baja,1,Round Robin,14125.1206,71.13,1,200,user-svc-1
+1. Carga baja,1,Round Robin,14125.1236,67.97,1,200,user-svc-2
+1. Carga baja,1,Round Robin,14125.1317,74.48,1,200,user-svc-2
+1. Carga baja,1,Round Robin,14125.1327,81.74,1,200,user-svc-1
+1. Carga baja,1,Round Robin,14125.1505,60.72,1,200,user-svc-2
+1. Carga baja,1,GNN-RL,14126.2856,30.16,1,200,user-svc-1
+1. Carga baja,1,GNN-RL,14126.2869,53.15,1,200,user-svc-2
+1. Carga baja,1,GNN-RL,14126.2881,52.73,1,200,user-svc-1
+1. Carga baja,1,GNN-RL,14126.29,77.42,1,200,user-svc-2
+1. Carga baja,1,GNN-RL,14126.3039,52.99,1,200,user-svc-2
+1. Carga baja,1,GNN-RL,14126.3158,59.25,1,200,user-svc-1
+1. Carga baja,1,GNN-RL,14126.3405,55.51,1,200,user-svc-2
+1. Carga baja,1,GNN-RL,14126.3409,53.27,1,200,user-svc-2
+1. Carga baja,1,GNN-RL,14126.357,65.33,1,200,user-svc-2
+1. Carga baja,1,GNN-RL,14126.3675,40.94,1,200,user-svc-2
+1. Carga baja,1,GNN-RL,14126.3752,35.59,1,200,user-svc-2
+1. Carga baja,1,GNN-RL,14126.3942,54.8,1,200,user-svc-2
+1. Carga baja,1,GNN-RL,14126.3961,81.54,1,200,user-svc-2
+1. Carga baja,1,GNN-RL,14126.4086,32.72,1,200,user-svc-2
+1. Carga baja,1,GNN-RL,14126.4108,69.89,1,200,user-svc-2
+1. Carga baja,1,GNN-RL,14126.4225,28.28,1,200,user-svc-1
+1. Carga baja,1,GNN-RL,14126.4414,67.61,1,200,user-svc-2
+1. Carga baja,1,GNN-RL,14126.4491,75.69,1,200,user-svc-2
+1. Carga baja,1,GNN-RL,14126.4508,84.02,1,200,user-svc-2
+1. Carga baja,1,GNN-RL,14126.4777,121.65,1,200,user-svc-2
+1. Carga baja,1,GNN-RL,14126.4808,167.36,1,200,user-svc-2
+1. Carga baja,1,GNN-RL,14126.5091,154.22,1,200,user-svc-2
+1. Carga baja,1,GNN-RL,14126.5249,117.29,1,200,user-svc-2
+1. Carga baja,1,GNN-RL,14126.5349,116.74,1,200,user-svc-2
+1. Carga baja,1,GNN-RL,14126.6009,55.07,1,200,user-svc-2
+1. Carga baja,1,GNN-RL,14126.6423,59.11,1,200,user-svc-2
+1. Carga baja,1,GNN-RL,14126.6487,62.55,1,200,user-svc-2
+1. Carga baja,1,GNN-RL,14126.6518,46.14,1,200,user-svc-1
+1. Carga baja,1,GNN-RL,14126.656,54.03,1,200,user-svc-2
+1. Carga baja,1,GNN-RL,14126.6634,39.18,1,200,user-svc-1
+1. Carga baja,1,GNN-RL,14126.6981,43.91,1,200,user-svc-2
+1. Carga baja,1,GNN-RL,14126.7016,47.37,1,200,user-svc-2
+1. Carga baja,1,GNN-RL,14126.7026,51.21,1,200,user-svc-2
+1. Carga baja,1,GNN-RL,14126.7102,81.43,1,200,user-svc-2
+1. Carga baja,1,GNN-RL,14126.7114,71.65,1,200,user-svc-2
+1. Carga baja,1,GNN-RL,14126.7422,76.21,1,200,user-svc-2
+1. Carga baja,1,GNN-RL,14126.749,99.88,1,200,user-svc-2
+1. Carga baja,1,GNN-RL,14126.7541,100.43,1,200,user-svc-2
+1. Carga baja,1,GNN-RL,14126.7832,78.64,1,200,user-svc-2
+1. Carga baja,1,GNN-RL,14126.7918,75.08,1,200,user-svc-2
+1. Carga baja,2,GNN-RL,14128.3631,36.84,1,200,user-svc-2
+1. Carga baja,2,GNN-RL,14128.3639,43.25,1,200,user-svc-2
+1. Carga baja,2,GNN-RL,14128.3655,59.13,1,200,user-svc-2
+1. Carga baja,2,GNN-RL,14128.3736,59.21,1,200,user-svc-2
+1. Carga baja,2,GNN-RL,14128.3776,41.5,1,200,user-svc-2
+1. Carga baja,2,GNN-RL,14128.4,37.12,1,200,user-svc-2
+1. Carga baja,2,GNN-RL,14128.4072,47.77,1,200,user-svc-2
+1. Carga baja,2,GNN-RL,14128.4192,45.23,1,200,user-svc-2
+1. Carga baja,2,GNN-RL,14128.425,54.88,1,200,user-svc-2
+1. Carga baja,2,GNN-RL,14128.4329,46.6,1,200,user-svc-2
+1. Carga baja,2,GNN-RL,14128.4373,55.63,1,200,user-svc-2
+1. Carga baja,2,GNN-RL,14128.4556,45.94,1,200,user-svc-2
+1. Carga baja,2,GNN-RL,14128.4645,34.42,1,200,user-svc-2
+1. Carga baja,2,GNN-RL,14128.4796,38.55,1,200,user-svc-1
+1. Carga baja,2,GNN-RL,14128.48,70.15,1,200,user-svc-2
+1. Carga baja,2,GNN-RL,14128.493,34.85,1,200,user-svc-1
+1. Carga baja,2,GNN-RL,14128.499,48.05,1,200,user-svc-2
+1. Carga baja,2,GNN-RL,14128.5016,42.73,1,200,user-svc-2
+1. Carga baja,2,GNN-RL,14128.5183,39.07,1,200,user-svc-2
+1. Carga baja,2,GNN-RL,14128.528,28.95,1,200,user-svc-2
+1. Carga baja,2,GNN-RL,14128.5444,36.9,1,200,user-svc-2
+1. Carga baja,2,GNN-RL,14128.5471,45.66,1,200,user-svc-2
+1. Carga baja,2,GNN-RL,14128.5503,46.39,1,200,user-svc-2
+1. Carga baja,2,GNN-RL,14128.557,55.84,1,200,user-svc-2
+1. Carga baja,2,GNN-RL,14128.5574,54.89,1,200,user-svc-2
+1. Carga baja,2,GNN-RL,14128.5816,51.11,1,200,user-svc-2
+1. Carga baja,2,GNN-RL,14128.5929,36.67,1,200,user-svc-2
+1. Carga baja,2,GNN-RL,14128.5968,71.73,1,200,user-svc-2
+1. Carga baja,2,GNN-RL,14128.6124,60.76,1,200,user-svc-2
+1. Carga baja,2,GNN-RL,14128.6129,43.05,1,200,user-svc-2
+1. Carga baja,2,GNN-RL,14128.6297,30.18,1,200,user-svc-2
+1. Carga baja,2,GNN-RL,14128.6328,40.16,1,200,user-svc-2
+1. Carga baja,2,GNN-RL,14128.6562,43.68,1,200,user-svc-2
+1. Carga baja,2,GNN-RL,14128.6599,56.57,1,200,user-svc-1
+1. Carga baja,2,GNN-RL,14128.6686,39.96,1,200,user-svc-2
+1. Carga baja,2,GNN-RL,14128.673,53.02,1,200,user-svc-2
+1. Carga baja,2,GNN-RL,14128.6733,52.99,1,200,user-svc-2
+1. Carga baja,2,GNN-RL,14128.7,34.36,1,200,user-svc-2
+1. Carga baja,2,GNN-RL,14128.7087,36.33,1,200,user-svc-2
+1. Carga baja,2,GNN-RL,14128.7166,28.17,1,200,user-svc-2
+1. Carga baja,2,Least Connections,14129.9004,52.45,1,200,user-svc-2
+1. Carga baja,2,Least Connections,14129.9012,61.97,1,200,user-svc-1
+1. Carga baja,2,Least Connections,14129.9031,49.45,1,200,user-svc-2
+1. Carga baja,2,Least Connections,14129.9108,52.63,1,200,user-svc-1
+1. Carga baja,2,Least Connections,14129.9187,60.19,1,200,user-svc-2
+1. Carga baja,2,Least Connections,14129.9527,47.17,1,200,user-svc-1
+1. Carga baja,2,Least Connections,14129.953,51.13,1,200,user-svc-2
+1. Carga baja,2,Least Connections,14129.9633,64.96,1,200,user-svc-1
+1. Carga baja,2,Least Connections,14129.9636,56.29,1,200,user-svc-1
+1. Carga baja,2,Least Connections,14129.979,72.06,1,200,user-svc-2
+1. Carga baja,2,Least Connections,14130.0,79.04,1,200,user-svc-1
+1. Carga baja,2,Least Connections,14130.0042,69.59,1,200,user-svc-1
+1. Carga baja,2,Least Connections,14130.0199,36.83,1,200,user-svc-2
+1. Carga baja,2,Least Connections,14130.0283,50.32,1,200,user-svc-1
+1. Carga baja,2,Least Connections,14130.0512,62.21,1,200,user-svc-2
+1. Carga baja,2,Least Connections,14130.0568,42.9,1,200,user-svc-1
+1. Carga baja,2,Least Connections,14130.0738,38.22,1,200,user-svc-1
+1. Carga baja,2,Least Connections,14130.0788,61.31,1,200,user-svc-2
+1. Carga baja,2,Least Connections,14130.0791,57.45,1,200,user-svc-1
+1. Carga baja,2,Least Connections,14130.0999,59.14,1,200,user-svc-2
+1. Carga baja,2,Least Connections,14130.1121,54.69,1,200,user-svc-1
+1. Carga baja,2,Least Connections,14130.1135,59.15,1,200,user-svc-1
+1. Carga baja,2,Least Connections,14130.1366,52.08,1,200,user-svc-2
+1. Carga baja,2,Least Connections,14130.1402,36.15,1,200,user-svc-1
+1. Carga baja,2,Least Connections,14130.1593,33.92,1,200,user-svc-2
+1. Carga baja,2,Least Connections,14130.167,47.46,1,200,user-svc-1
+1. Carga baja,2,Least Connections,14130.1727,47.05,1,200,user-svc-1
+1. Carga baja,2,Least Connections,14130.1764,41.2,1,200,user-svc-2
+1. Carga baja,2,Least Connections,14130.1888,28.39,1,200,user-svc-2
+1. Carga baja,2,Least Connections,14130.1933,41.52,1,200,user-svc-1
+1. Carga baja,2,Least Connections,14130.2145,29.01,1,200,user-svc-2
+1. Carga baja,2,Least Connections,14130.2173,45.24,1,200,user-svc-2
+1. Carga baja,2,Least Connections,14130.2176,47.52,1,200,user-svc-1
+1. Carga baja,2,Least Connections,14130.2199,40.29,1,200,user-svc-1
+1. Carga baja,2,Least Connections,14130.2352,41.19,1,200,user-svc-2
+1. Carga baja,2,Least Connections,14130.2436,47.41,1,200,user-svc-1
+1. Carga baja,2,Least Connections,14130.2603,49.33,1,200,user-svc-1
+1. Carga baja,2,Least Connections,14130.2627,40.56,1,200,user-svc-2
+1. Carga baja,2,Least Connections,14130.2653,40.39,1,200,user-svc-1
+1. Carga baja,2,Least Connections,14130.2765,31.65,1,200,user-svc-2
+1. Carga baja,2,Round Robin,14131.4297,20.61,1,200,user-svc-1
+1. Carga baja,2,Round Robin,14131.4312,74.5,1,200,user-svc-2
+1. Carga baja,2,Round Robin,14131.4345,42.56,1,200,user-svc-1
+1. Carga baja,2,Round Robin,14131.4382,66.39,1,200,user-svc-2
+1. Carga baja,2,Round Robin,14131.4499,48.13,1,200,user-svc-1
+1. Carga baja,2,Round Robin,14131.4513,117.18,1,200,user-svc-2
+1. Carga baja,2,Round Robin,14131.4772,44.29,1,200,user-svc-1
+1. Carga baja,2,Round Robin,14131.4981,75.24,1,200,user-svc-2
+1. Carga baja,2,Round Robin,14131.5047,23.55,1,200,user-svc-1
+1. Carga baja,2,Round Robin,14131.5058,69.43,1,200,user-svc-2
+1. Carga baja,2,Round Robin,14131.5215,18.74,1,200,user-svc-1
+1. Carga baja,2,Round Robin,14131.5284,52.31,1,200,user-svc-2
+1. Carga baja,2,Round Robin,14131.5404,11.72,1,200,user-svc-1
+1. Carga baja,2,Round Robin,14131.5522,37.94,1,200,user-svc-2
+1. Carga baja,2,Round Robin,14131.5686,37.69,1,200,user-svc-1
+1. Carga baja,2,Round Robin,14131.5734,84.57,1,200,user-svc-2
+1. Carga baja,2,Round Robin,14131.5754,42.67,1,200,user-svc-1
+1. Carga baja,2,Round Robin,14131.5808,109.53,1,200,user-svc-2
+1. Carga baja,2,Round Robin,14131.5902,39.48,1,200,user-svc-1
+1. Carga baja,2,Round Robin,14131.6064,76.4,1,200,user-svc-2
+1. Carga baja,2,Round Robin,14131.6185,22.34,1,200,user-svc-1
+1. Carga baja,2,Round Robin,14131.6298,65.07,1,200,user-svc-2
+1. Carga baja,2,Round Robin,14131.6409,21.26,1,200,user-svc-1
+1. Carga baja,2,Round Robin,14131.6581,41.88,1,200,user-svc-2
+1. Carga baja,2,Round Robin,14131.6623,45.12,1,200,user-svc-1
+1. Carga baja,2,Round Robin,14131.6831,32.68,1,200,user-svc-2
+1. Carga baja,2,Round Robin,14131.6904,42.84,1,200,user-svc-1
+1. Carga baja,2,Round Robin,14131.6949,57.93,1,200,user-svc-2
+1. Carga baja,2,Round Robin,14131.7001,55.68,1,200,user-svc-1
+1. Carga baja,2,Round Robin,14131.7075,44.89,1,200,user-svc-2
+1. Carga baja,2,Round Robin,14131.7161,76.85,1,200,user-svc-1
+1. Carga baja,2,Round Robin,14131.7334,76.41,1,200,user-svc-2
+1. Carga baja,2,Round Robin,14131.7526,60.26,1,200,user-svc-1
+1. Carga baja,2,Round Robin,14131.753,54.41,1,200,user-svc-2
+1. Carga baja,2,Round Robin,14131.7559,62.18,1,200,user-svc-1
+1. Carga baja,2,Round Robin,14131.7931,51.0,1,200,user-svc-2
+1. Carga baja,2,Round Robin,14131.8075,71.79,1,200,user-svc-2
+1. Carga baja,2,Round Robin,14131.8102,57.65,1,200,user-svc-1
+1. Carga baja,2,Round Robin,14131.8129,67.0,1,200,user-svc-2
+1. Carga baja,2,Round Robin,14131.8182,53.45,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14136.9938,56.99,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14136.9956,80.96,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14136.9983,139.0,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14136.9996,144.75,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14137.003,135.91,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14137.0058,157.0,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14137.0079,126.14,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14137.0114,172.87,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14137.0153,140.62,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14137.0198,173.7,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14137.0209,188.18,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14137.0232,256.07,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14137.0343,216.86,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14137.0382,187.49,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14137.0401,236.28,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14137.0443,257.91,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14137.0454,182.72,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14137.0473,191.54,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14137.0509,235.27,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14137.0535,202.65,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14137.0561,208.42,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14137.0581,261.09,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14137.0599,233.87,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14137.0617,235.79,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14137.0639,290.25,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14137.0659,266.94,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14137.0675,265.12,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14137.0695,336.77,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14137.0794,284.46,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14137.0839,277.69,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14137.0867,313.87,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14137.0878,297.63,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14137.0892,314.64,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14137.0903,333.14,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14137.0929,320.47,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14137.1051,331.02,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14137.1091,331.27,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14137.1103,341.3,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14137.1122,347.02,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14137.1175,351.94,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14137.1196,373.34,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14137.1206,359.01,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14137.1341,346.08,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14137.1374,378.23,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14137.139,383.79,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14137.1445,383.76,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14137.156,395.41,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14137.163,380.97,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14137.1844,368.08,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14137.1937,353.86,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14137.2093,377.15,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14137.2259,349.18,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14137.2282,371.48,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14137.239,351.12,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14137.2513,373.02,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14137.2563,373.71,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14137.2647,367.88,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14137.2765,364.07,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14137.2793,363.58,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14137.2863,377.03,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14137.2939,377.52,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14137.2976,388.51,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14137.3023,393.02,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14137.3193,381.43,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14137.3327,383.88,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14137.3329,373.23,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14137.3542,372.39,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14137.3617,361.92,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14137.3641,382.56,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14137.3855,375.32,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14137.4006,385.79,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14137.4039,389.26,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14137.4064,415.95,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14137.4135,388.73,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14137.4235,390.26,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14137.4362,364.97,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14137.4405,362.55,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14137.4521,384.9,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14137.4594,400.92,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14137.4696,384.77,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14137.4798,390.91,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14137.4803,349.93,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14137.493,390.82,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14137.5158,360.69,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14137.5229,374.0,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14137.5284,397.03,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14137.544,363.17,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14137.5477,447.7,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14137.5516,371.77,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14137.5526,409.66,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14137.5751,399.24,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14137.5865,392.75,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14137.5902,388.86,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14137.5998,394.35,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14137.6244,365.52,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14137.6301,389.53,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14137.6327,388.92,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14137.6407,398.56,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14137.643,423.2,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14137.6634,393.72,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14137.6716,388.41,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14137.6862,394.9,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14137.6954,388.32,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14137.7008,405.69,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14137.7062,418.31,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14137.7167,377.78,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14137.7237,439.71,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14137.7267,445.81,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14137.7467,410.48,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14137.761,430.85,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14137.7865,403.3,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14137.7933,396.85,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14137.8013,381.71,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14137.8023,392.8,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14137.8031,402.8,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14137.8139,415.54,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14137.8224,463.89,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14137.8303,417.95,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14137.8372,385.82,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14137.8544,408.64,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14137.8604,438.43,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14137.8708,403.93,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14137.8766,412.76,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14137.884,419.1,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14137.897,415.34,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14137.9074,401.15,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14137.9235,408.69,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14137.9256,383.72,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14137.9624,355.99,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14137.9745,374.29,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14137.9791,363.08,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14137.9793,383.37,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14137.9901,375.51,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14137.9942,387.63,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14137.9954,395.54,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14138.0197,388.51,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14138.0217,416.54,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14138.0393,394.41,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14138.0573,348.0,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14138.0611,341.07,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14138.0663,376.49,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14138.0812,381.67,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14138.0838,365.68,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14138.0946,358.78,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14138.1067,347.81,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14138.1247,332.83,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14138.1573,302.67,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14138.1635,304.74,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14138.1726,298.15,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14138.1831,297.86,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14138.1899,298.41,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14138.1902,284.14,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14138.1919,317.29,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14138.1951,285.64,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14138.206,288.9,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14138.2231,279.96,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14138.2295,293.89,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14138.2484,267.52,1,200,user-svc-2
+2. Carga alta,1,Least Connections,14138.2631,267.22,1,200,user-svc-1
+2. Carga alta,1,Least Connections,14138.2748,252.97,1,200,user-svc-1
+2. Carga alta,1,GNN-RL,14139.649,28.03,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14139.6505,42.84,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14139.6527,79.84,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14139.674,196.03,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14139.6771,93.27,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14139.6872,127.54,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14139.6935,116.26,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14139.7068,160.26,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14139.7183,149.32,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14139.7247,128.49,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14139.732,236.39,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14139.7341,253.6,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14139.7406,261.94,1,200,user-svc-1
+2. Carga alta,1,GNN-RL,14139.745,380.99,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14139.7478,426.49,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14139.7497,340.21,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14139.753,244.71,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14139.7585,352.76,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14139.7705,382.9,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14139.789,349.81,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14139.8032,360.83,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14139.8098,393.04,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14139.8332,339.76,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14139.8334,340.57,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14139.8396,371.49,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14139.8533,387.03,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14139.8848,438.88,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14139.8849,369.42,1,200,user-svc-1
+2. Carga alta,1,GNN-RL,14139.885,284.54,1,200,user-svc-1
+2. Carga alta,1,GNN-RL,14139.8851,490.4,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14139.9198,367.92,1,200,user-svc-1
+2. Carga alta,1,GNN-RL,14139.9386,383.29,1,200,user-svc-1
+2. Carga alta,1,GNN-RL,14139.9411,388.79,1,200,user-svc-1
+2. Carga alta,1,GNN-RL,14139.9514,504.41,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14139.9524,471.2,1,200,user-svc-1
+2. Carga alta,1,GNN-RL,14139.9541,507.61,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14139.9563,474.06,1,200,user-svc-1
+2. Carga alta,1,GNN-RL,14139.9685,642.6,1,200,user-svc-1
+2. Carga alta,1,GNN-RL,14139.9786,522.53,1,200,user-svc-1
+2. Carga alta,1,GNN-RL,14139.9879,694.82,1,200,user-svc-1
+2. Carga alta,1,GNN-RL,14139.9903,737.24,1,200,user-svc-1
+2. Carga alta,1,GNN-RL,14139.9979,667.1,1,200,user-svc-1
+2. Carga alta,1,GNN-RL,14140.0066,811.34,1,200,user-svc-1
+2. Carga alta,1,GNN-RL,14140.0067,634.94,1,200,user-svc-1
+2. Carga alta,1,GNN-RL,14140.0127,725.82,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14140.015,651.94,1,200,user-svc-1
+2. Carga alta,1,GNN-RL,14140.0187,763.66,1,200,user-svc-1
+2. Carga alta,1,GNN-RL,14140.0318,760.36,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14140.0382,866.55,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14140.0497,933.13,1,200,user-svc-1
+2. Carga alta,1,GNN-RL,14140.0557,876.9,1,200,user-svc-1
+2. Carga alta,1,GNN-RL,14140.0611,877.43,1,200,user-svc-1
+2. Carga alta,1,GNN-RL,14140.0722,769.67,1,200,user-svc-1
+2. Carga alta,1,GNN-RL,14140.075,834.57,1,200,user-svc-1
+2. Carga alta,1,GNN-RL,14140.09,892.26,1,200,user-svc-1
+2. Carga alta,1,GNN-RL,14140.1114,981.06,1,200,user-svc-1
+2. Carga alta,1,GNN-RL,14140.1261,739.7,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14140.1389,813.14,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14140.1536,998.42,1,200,user-svc-1
+2. Carga alta,1,GNN-RL,14140.1641,719.15,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14140.1697,1103.21,1,200,user-svc-1
+2. Carga alta,1,GNN-RL,14140.1731,935.49,1,200,user-svc-1
+2. Carga alta,1,GNN-RL,14140.174,1003.24,1,200,user-svc-1
+2. Carga alta,1,GNN-RL,14140.1743,858.96,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14140.2029,769.43,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14140.2112,796.73,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14140.2404,790.88,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14140.2545,972.88,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14140.2879,775.53,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14140.322,862.38,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14140.3238,817.19,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14140.33,768.14,1,200,user-svc-1
+2. Carga alta,1,GNN-RL,14140.3773,839.07,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14140.424,798.0,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14140.4304,803.95,1,200,user-svc-1
+2. Carga alta,1,GNN-RL,14140.4561,793.56,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14140.4618,818.79,1,200,user-svc-1
+2. Carga alta,1,GNN-RL,14140.5012,773.71,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14140.6114,657.81,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14140.6418,644.97,1,200,user-svc-1
+2. Carga alta,1,GNN-RL,14140.6651,657.2,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14140.667,661.98,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14140.6829,693.87,1,200,user-svc-1
+2. Carga alta,1,GNN-RL,14140.7276,582.65,1,200,user-svc-1
+2. Carga alta,1,GNN-RL,14140.7386,590.64,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14140.7825,600.57,1,200,user-svc-1
+2. Carga alta,1,GNN-RL,14140.793,575.57,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14140.8181,546.57,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14140.842,602.39,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14140.8659,575.22,1,200,user-svc-1
+2. Carga alta,1,GNN-RL,14140.884,585.23,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14140.9049,651.09,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14140.9101,588.25,1,200,user-svc-1
+2. Carga alta,1,GNN-RL,14140.9331,577.77,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14140.9386,537.11,1,200,user-svc-1
+2. Carga alta,1,GNN-RL,14140.9521,591.36,1,200,user-svc-1
+2. Carga alta,1,GNN-RL,14140.9725,612.55,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14140.9825,644.97,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14140.9829,604.14,1,200,user-svc-1
+2. Carga alta,1,GNN-RL,14141.008,595.12,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14141.0314,660.17,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14141.0334,574.36,1,200,user-svc-1
+2. Carga alta,1,GNN-RL,14141.0635,606.99,1,200,user-svc-1
+2. Carga alta,1,GNN-RL,14141.0926,639.45,1,200,user-svc-1
+2. Carga alta,1,GNN-RL,14141.0982,620.96,1,200,user-svc-1
+2. Carga alta,1,GNN-RL,14141.1086,657.52,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14141.1411,608.41,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14141.1521,631.66,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14141.1775,579.67,1,200,user-svc-1
+2. Carga alta,1,GNN-RL,14141.1845,564.49,1,200,user-svc-1
+2. Carga alta,1,GNN-RL,14141.2165,630.8,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14141.2221,606.4,1,200,user-svc-1
+2. Carga alta,1,GNN-RL,14141.2275,622.42,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14141.2344,640.16,1,200,user-svc-1
+2. Carga alta,1,GNN-RL,14141.2498,621.14,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14141.2693,691.03,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14141.2731,665.71,1,200,user-svc-1
+2. Carga alta,1,GNN-RL,14141.275,643.65,1,200,user-svc-1
+2. Carga alta,1,GNN-RL,14141.2807,689.52,1,200,user-svc-1
+2. Carga alta,1,GNN-RL,14141.2868,627.59,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14141.3104,686.52,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14141.3224,692.94,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14141.3291,687.68,1,200,user-svc-1
+2. Carga alta,1,GNN-RL,14141.3294,684.97,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14141.3648,653.67,1,200,user-svc-1
+2. Carga alta,1,GNN-RL,14141.3686,650.18,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14141.3768,614.29,1,200,user-svc-1
+2. Carga alta,1,GNN-RL,14141.3831,666.72,1,200,user-svc-1
+2. Carga alta,1,GNN-RL,14141.4412,694.07,1,200,user-svc-1
+2. Carga alta,1,GNN-RL,14141.4445,660.91,1,200,user-svc-1
+2. Carga alta,1,GNN-RL,14141.4693,672.56,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14141.4759,675.73,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14141.4985,666.77,1,200,user-svc-1
+2. Carga alta,1,GNN-RL,14141.511,651.65,1,200,user-svc-1
+2. Carga alta,1,GNN-RL,14141.5436,641.9,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14141.5561,620.15,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14141.5851,625.14,1,200,user-svc-1
+2. Carga alta,1,GNN-RL,14141.5872,598.7,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14141.6032,660.22,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14141.6079,622.77,1,200,user-svc-1
+2. Carga alta,1,GNN-RL,14141.6276,650.35,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14141.6706,623.29,1,200,user-svc-1
+2. Carga alta,1,GNN-RL,14141.6917,550.27,1,200,user-svc-1
+2. Carga alta,1,GNN-RL,14141.7198,593.59,1,200,user-svc-1
+2. Carga alta,1,GNN-RL,14141.7321,556.72,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14141.7491,556.87,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14141.7496,533.44,1,200,user-svc-1
+2. Carga alta,1,GNN-RL,14141.7572,573.08,1,200,user-svc-1
+2. Carga alta,1,GNN-RL,14141.7667,646.36,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14141.7841,647.65,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14141.8286,591.62,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14141.8475,524.67,1,200,user-svc-1
+2. Carga alta,1,GNN-RL,14141.8501,609.28,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14141.8721,479.05,1,200,user-svc-1
+2. Carga alta,1,GNN-RL,14141.8747,530.46,1,200,user-svc-1
+2. Carga alta,1,GNN-RL,14141.9148,546.06,1,200,user-svc-2
+2. Carga alta,1,GNN-RL,14141.9188,464.33,1,200,user-svc-1
+2. Carga alta,1,GNN-RL,14141.9388,483.45,1,200,user-svc-1
+2. Carga alta,1,GNN-RL,14141.9614,468.81,1,200,user-svc-1
+2. Carga alta,1,GNN-RL,14141.9703,460.03,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14143.6229,22.94,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14143.624,35.86,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14143.6252,116.57,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14143.6289,45.01,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14143.6341,111.54,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14143.6442,119.24,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14143.647,138.13,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14143.6544,219.75,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14143.6558,192.43,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14143.6582,177.91,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14143.6599,190.17,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14143.6612,150.67,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14143.6626,161.87,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14143.6676,227.72,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14143.6712,205.61,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14143.6741,309.09,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14143.6759,378.21,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14143.6762,356.05,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14143.6787,276.04,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14143.6821,289.88,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14143.6849,378.12,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14143.6875,287.13,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14143.6941,330.65,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14143.696,387.18,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14143.7003,377.88,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14143.7027,354.75,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14143.7071,372.27,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14143.7081,511.87,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14143.7139,452.7,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14143.7169,465.23,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14143.7191,435.49,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14143.7238,412.67,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14143.7316,473.4,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14143.734,441.94,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14143.7352,523.15,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14143.742,571.4,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14143.746,505.96,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14143.7458,485.68,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14143.7559,596.05,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14143.7597,494.49,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14143.7635,611.49,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14143.77,520.68,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14143.7744,616.67,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14143.7817,650.94,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14143.7852,547.21,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14143.7902,605.4,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14143.7963,631.02,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14143.8119,669.71,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14143.8246,673.69,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14143.8362,665.4,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14143.8484,620.59,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14143.8502,637.79,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14143.8742,643.03,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14143.8769,594.33,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14143.8956,655.32,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14143.9548,598.35,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14143.9721,682.33,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14143.9747,600.1,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14143.9832,653.5,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14144.0249,591.74,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14144.0323,673.59,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14144.0542,553.47,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14144.0576,600.57,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14144.0631,626.79,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14144.0783,607.12,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14144.0794,672.95,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14144.0833,622.36,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14144.1367,581.53,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14144.1546,611.47,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14144.1667,599.78,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14144.176,603.76,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14144.1823,576.92,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14144.2051,612.89,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14144.2201,576.92,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14144.2316,585.24,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14144.252,629.09,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14144.2542,601.57,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14144.2584,620.21,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14144.2908,611.01,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14144.3137,604.74,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14144.3327,650.21,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14144.352,583.24,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14144.3755,611.09,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14144.3911,593.87,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14144.3958,580.08,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14144.4276,586.47,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14144.4329,573.94,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14144.469,568.0,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14144.4713,611.16,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14144.4817,586.08,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14144.488,602.16,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14144.4984,742.49,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14144.5017,613.34,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14144.5174,610.01,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14144.551,702.09,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14144.5533,636.62,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14144.5754,647.04,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14144.6078,643.34,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14144.6167,618.68,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14144.6368,680.98,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14144.6546,632.42,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14144.6582,635.44,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14144.6856,728.88,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14144.69,799.96,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14144.7057,635.75,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14144.706,738.04,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14144.7183,634.38,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14144.7525,670.54,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14144.7593,680.21,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14144.7662,726.24,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14144.7666,716.38,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14144.7798,681.66,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14144.7972,740.94,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14144.817,690.63,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14144.8181,669.7,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14144.8559,634.94,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14144.879,628.95,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14144.8812,665.43,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14144.9021,668.68,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14144.9189,650.06,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14144.9354,661.5,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14144.9768,636.18,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14144.9831,620.15,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14144.9851,632.2,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14144.9866,610.94,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14145.007,616.15,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14145.0142,601.63,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14145.0371,588.78,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14145.0679,576.0,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14145.0826,559.57,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14145.0904,563.06,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14145.1151,564.56,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14145.1276,557.3,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14145.19,487.39,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14145.2225,497.77,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14145.2355,469.79,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14145.2411,461.9,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14145.2512,443.9,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14145.2532,449.35,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14145.2873,447.83,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14145.2938,470.4,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14145.318,417.48,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14145.3415,435.26,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14145.3527,467.27,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14145.4146,381.14,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14145.4235,410.08,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14145.4396,397.26,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14145.4441,379.82,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14145.4616,411.36,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14145.483,356.07,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14145.4879,392.73,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14145.49,403.43,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14145.4909,373.22,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14145.4925,352.16,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14145.5078,383.07,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14145.508,391.52,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14145.5382,365.03,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14145.5468,374.34,1,200,user-svc-2
+2. Carga alta,1,Round Robin,14145.5691,342.62,1,200,user-svc-1
+2. Carga alta,1,Round Robin,14145.5709,348.1,1,200,user-svc-2
+2. Carga alta,2,Least Connections,14147.4664,37.74,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14147.4743,44.93,1,200,user-svc-2
+2. Carga alta,2,Least Connections,14147.4927,48.27,1,200,user-svc-2
+2. Carga alta,2,Least Connections,14147.5043,118.75,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14147.5077,188.99,1,200,user-svc-2
+2. Carga alta,2,Least Connections,14147.5193,210.6,1,200,user-svc-2
+2. Carga alta,2,Least Connections,14147.5222,160.12,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14147.5292,87.97,1,200,user-svc-2
+2. Carga alta,2,Least Connections,14147.5382,219.89,1,200,user-svc-2
+2. Carga alta,2,Least Connections,14147.5411,110.86,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14147.5498,193.88,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14147.5615,167.94,1,200,user-svc-2
+2. Carga alta,2,Least Connections,14147.5841,170.53,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14147.5938,322.99,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14147.5985,373.78,1,200,user-svc-2
+2. Carga alta,2,Least Connections,14147.6075,270.28,1,200,user-svc-2
+2. Carga alta,2,Least Connections,14147.6179,296.25,1,200,user-svc-2
+2. Carga alta,2,Least Connections,14147.631,292.91,1,200,user-svc-2
+2. Carga alta,2,Least Connections,14147.6311,277.72,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14147.6325,387.32,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14147.6349,280.83,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14147.6479,359.85,1,200,user-svc-2
+2. Carga alta,2,Least Connections,14147.649,341.6,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14147.6522,302.11,1,200,user-svc-2
+2. Carga alta,2,Least Connections,14147.6658,373.1,1,200,user-svc-2
+2. Carga alta,2,Least Connections,14147.6702,363.89,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14147.6722,425.09,1,200,user-svc-2
+2. Carga alta,2,Least Connections,14147.6832,398.42,1,200,user-svc-2
+2. Carga alta,2,Least Connections,14147.6968,352.35,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14147.6999,403.94,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14147.713,393.53,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14147.7179,425.47,1,200,user-svc-2
+2. Carga alta,2,Least Connections,14147.7197,411.62,1,200,user-svc-2
+2. Carga alta,2,Least Connections,14147.7297,387.81,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14147.7342,414.56,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14147.7354,486.5,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14147.7438,448.58,1,200,user-svc-2
+2. Carga alta,2,Least Connections,14147.7499,483.48,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14147.7515,537.09,1,200,user-svc-2
+2. Carga alta,2,Least Connections,14147.753,545.97,1,200,user-svc-2
+2. Carga alta,2,Least Connections,14147.7607,523.42,1,200,user-svc-2
+2. Carga alta,2,Least Connections,14147.7608,479.65,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14147.7809,473.03,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14147.7951,466.07,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14147.8026,505.32,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14147.8082,606.5,1,200,user-svc-2
+2. Carga alta,2,Least Connections,14147.8144,687.29,1,200,user-svc-2
+2. Carga alta,2,Least Connections,14147.8223,530.23,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14147.829,699.78,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14147.8337,590.77,1,200,user-svc-2
+2. Carga alta,2,Least Connections,14147.8392,543.24,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14147.8464,589.99,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14147.8576,707.88,1,200,user-svc-2
+2. Carga alta,2,Least Connections,14147.8778,672.4,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14147.9089,574.8,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14147.9143,625.09,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14147.9158,603.14,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14147.9169,702.92,1,200,user-svc-2
+2. Carga alta,2,Least Connections,14147.924,714.21,1,200,user-svc-2
+2. Carga alta,2,Least Connections,14147.9545,633.46,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14147.9725,611.2,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14147.991,646.26,1,200,user-svc-2
+2. Carga alta,2,Least Connections,14148.0079,593.87,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14148.0199,648.33,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14148.0342,682.39,1,200,user-svc-2
+2. Carga alta,2,Least Connections,14148.039,675.33,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14148.0495,651.55,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14148.0817,717.58,1,200,user-svc-2
+2. Carga alta,2,Least Connections,14148.0974,676.71,1,200,user-svc-2
+2. Carga alta,2,Least Connections,14148.1039,612.39,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14148.1067,633.31,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14148.1176,662.54,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14148.1314,672.62,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14148.1439,701.11,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14148.1489,817.03,1,200,user-svc-2
+2. Carga alta,2,Least Connections,14148.1927,681.53,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14148.222,705.02,1,200,user-svc-2
+2. Carga alta,2,Least Connections,14148.2335,632.87,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14148.2406,688.12,1,200,user-svc-2
+2. Carga alta,2,Least Connections,14148.2541,654.17,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14148.2613,616.31,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14148.2842,720.76,1,200,user-svc-2
+2. Carga alta,2,Least Connections,14148.2887,687.44,1,200,user-svc-2
+2. Carga alta,2,Least Connections,14148.2991,645.15,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14148.3089,688.91,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14148.3526,629.36,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14148.3832,624.39,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14148.4148,709.3,1,200,user-svc-2
+2. Carga alta,2,Least Connections,14148.4246,577.41,1,200,user-svc-2
+2. Carga alta,2,Least Connections,14148.4365,629.07,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14148.4838,654.39,1,200,user-svc-2
+2. Carga alta,2,Least Connections,14148.5018,597.15,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14148.5193,617.06,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14148.5289,669.31,1,200,user-svc-2
+2. Carga alta,2,Least Connections,14148.5395,616.22,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14148.5503,703.68,1,200,user-svc-2
+2. Carga alta,2,Least Connections,14148.5657,591.13,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14148.5838,650.93,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14148.588,643.85,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14148.6019,610.42,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14148.6199,654.13,1,200,user-svc-2
+2. Carga alta,2,Least Connections,14148.6373,634.06,1,200,user-svc-2
+2. Carga alta,2,Least Connections,14148.6383,602.87,1,200,user-svc-2
+2. Carga alta,2,Least Connections,14148.6688,603.73,1,200,user-svc-2
+2. Carga alta,2,Least Connections,14148.7011,594.88,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14148.7144,608.48,1,200,user-svc-2
+2. Carga alta,2,Least Connections,14148.7164,633.62,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14148.7166,610.01,1,200,user-svc-2
+2. Carga alta,2,Least Connections,14148.7401,631.41,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14148.779,638.22,1,200,user-svc-2
+2. Carga alta,2,Least Connections,14148.7802,624.7,1,200,user-svc-2
+2. Carga alta,2,Least Connections,14148.7994,665.34,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14148.8041,607.31,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14148.8454,587.65,1,200,user-svc-2
+2. Carga alta,2,Least Connections,14148.8664,603.19,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14148.8745,578.78,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14148.8778,639.58,1,200,user-svc-2
+2. Carga alta,2,Least Connections,14148.9084,586.15,1,200,user-svc-2
+2. Carga alta,2,Least Connections,14148.9271,582.14,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14148.9288,651.71,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14148.9444,625.21,1,200,user-svc-2
+2. Carga alta,2,Least Connections,14148.966,605.77,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14148.9762,631.91,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14148.982,557.65,1,200,user-svc-2
+2. Carga alta,2,Least Connections,14148.9979,601.43,1,200,user-svc-2
+2. Carga alta,2,Least Connections,14149.0021,603.36,1,200,user-svc-2
+2. Carga alta,2,Least Connections,14149.0064,612.29,1,200,user-svc-2
+2. Carga alta,2,Least Connections,14149.0077,591.85,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14149.0659,515.11,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14149.0991,525.33,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14149.1242,506.27,1,200,user-svc-2
+2. Carga alta,2,Least Connections,14149.1365,512.46,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14149.1383,498.13,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14149.1558,480.42,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14149.1569,483.83,1,200,user-svc-2
+2. Carga alta,2,Least Connections,14149.1983,461.2,1,200,user-svc-2
+2. Carga alta,2,Least Connections,14149.2124,481.44,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14149.232,444.17,1,200,user-svc-2
+2. Carga alta,2,Least Connections,14149.2349,461.17,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14149.2412,457.94,1,200,user-svc-2
+2. Carga alta,2,Least Connections,14149.2541,461.63,1,200,user-svc-2
+2. Carga alta,2,Least Connections,14149.2715,439.83,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14149.2726,437.49,1,200,user-svc-2
+2. Carga alta,2,Least Connections,14149.2741,474.53,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14149.2962,434.17,1,200,user-svc-2
+2. Carga alta,2,Least Connections,14149.3233,436.16,1,200,user-svc-2
+2. Carga alta,2,Least Connections,14149.3267,422.18,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14149.3501,425.16,1,200,user-svc-2
+2. Carga alta,2,Least Connections,14149.3716,381.15,1,200,user-svc-2
+2. Carga alta,2,Least Connections,14149.405,355.57,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14149.4115,372.22,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14149.4173,351.74,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14149.4331,347.55,1,200,user-svc-2
+2. Carga alta,2,Least Connections,14149.4535,333.62,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14149.4648,332.07,1,200,user-svc-2
+2. Carga alta,2,Least Connections,14149.4697,329.13,1,200,user-svc-2
+2. Carga alta,2,Least Connections,14149.4946,313.24,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14149.5094,316.92,1,200,user-svc-2
+2. Carga alta,2,Least Connections,14149.5175,313.16,1,200,user-svc-1
+2. Carga alta,2,Least Connections,14149.5398,286.38,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14150.8693,23.99,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14150.8709,192.5,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14150.8716,120.15,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14150.8737,211.31,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14150.8774,143.03,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14150.8846,198.67,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14150.8935,245.7,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14150.8968,223.41,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14150.9013,223.45,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14150.9039,241.37,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14150.9111,235.89,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14150.9133,297.69,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14150.9153,276.41,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14150.9176,308.52,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14150.9204,248.51,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14150.9249,363.69,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14150.9279,242.69,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14150.9294,273.72,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14150.9353,363.92,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14150.9365,310.16,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14150.9385,319.66,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14150.9415,320.45,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14150.943,372.65,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14150.9458,339.4,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14150.9513,349.73,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14150.9524,376.34,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14150.9544,381.57,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14150.9561,391.28,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14150.9598,427.17,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14150.9654,415.71,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14150.9686,489.99,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14150.9717,511.85,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14150.9728,394.83,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14150.9747,478.11,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14150.9766,609.97,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14150.9779,497.23,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14150.9851,652.91,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14150.987,423.05,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14150.9885,426.34,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14150.9918,459.85,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14150.9938,535.05,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14151.0014,521.18,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14151.0206,484.91,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14151.0635,469.18,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14151.0833,468.38,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14151.0851,425.05,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14151.1203,419.06,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14151.1248,449.14,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14151.1393,472.8,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14151.1454,436.13,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14151.1472,448.57,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14151.1691,449.03,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14151.1707,530.07,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14151.1918,429.42,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14151.2032,344.96,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14151.2111,476.52,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14151.2263,431.0,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14151.2468,320.1,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14151.2583,418.25,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14151.262,434.8,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14151.2854,439.24,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14151.2887,473.89,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14151.2993,481.78,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14151.3011,418.58,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14151.3158,464.49,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14151.3288,469.68,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14151.3361,490.44,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14151.3476,498.42,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14151.3678,387.34,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14151.3812,365.67,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14151.3872,357.88,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14151.4102,449.26,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14151.4149,475.09,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14151.4518,371.75,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14151.4529,657.27,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14151.4587,664.21,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14151.4753,359.87,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14151.4837,437.88,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14151.5056,281.94,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14151.5102,458.55,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14151.5227,345.33,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14151.5293,346.58,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14151.5328,501.37,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14151.5394,451.98,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14151.5483,835.07,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14151.5518,593.31,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14151.567,383.48,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14151.5745,379.24,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14151.5818,427.48,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14151.5867,507.32,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14151.5959,633.81,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14151.6123,407.84,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14151.6183,414.54,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14151.6213,797.71,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14151.6381,437.41,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14151.6575,478.58,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14151.6766,641.34,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14151.6879,596.97,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14151.6969,503.43,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14151.7008,538.91,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14151.72,571.88,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14151.7249,488.99,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14151.7452,514.73,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14151.747,532.37,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14151.7552,569.03,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14151.7627,720.22,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14151.7807,493.42,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14151.7811,533.99,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14151.7876,520.9,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14151.7987,518.37,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14151.8237,719.66,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14151.8266,783.23,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14151.8352,512.7,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14151.8461,602.64,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14151.8595,569.89,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14151.8682,501.44,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14151.876,600.08,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14151.8901,749.26,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14151.9217,539.76,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14151.9505,451.18,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14151.9538,461.42,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14151.9689,539.22,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14151.9915,895.32,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14152.0094,547.38,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14152.0203,462.39,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14152.0332,541.77,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14152.0342,569.18,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14152.0756,468.47,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14152.0941,406.11,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14152.1103,530.44,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14152.123,671.98,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14152.1361,388.26,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14152.1452,404.68,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14152.2004,364.41,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14152.214,412.46,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14152.2298,295.84,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14152.2398,464.16,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14152.26,519.73,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14152.2742,619.42,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14152.2795,516.99,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14152.285,436.85,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14152.292,364.42,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14152.309,445.24,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14152.3152,573.62,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14152.3172,365.44,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14152.318,552.94,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14152.3244,474.96,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14152.348,470.8,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14152.3697,476.29,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14152.3835,425.82,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14152.4018,423.43,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14152.4153,384.99,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14152.4191,414.95,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14152.4296,426.27,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14152.4491,376.41,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14152.4615,338.43,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14152.4761,411.61,1,200,user-svc-1
+2. Carga alta,2,GNN-RL,14152.4827,424.6,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14152.483,375.45,1,200,user-svc-2
+2. Carga alta,2,GNN-RL,14152.5003,385.23,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14154.0553,56.95,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14154.0569,64.9,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14154.0588,61.74,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14154.0626,191.57,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14154.0681,104.42,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14154.077,134.97,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14154.078,141.77,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14154.0797,150.22,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14154.0816,113.21,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14154.0839,181.5,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14154.0859,219.57,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14154.0875,202.04,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14154.0908,188.55,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14154.0928,211.11,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14154.0945,233.37,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14154.0981,225.85,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14154.1021,254.14,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14154.107,262.12,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14154.1089,220.42,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14154.1109,236.39,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14154.1124,238.07,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14154.1259,283.36,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14154.1257,251.13,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14154.1246,237.66,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14154.1319,344.02,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14154.1383,265.22,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14154.1468,270.59,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14154.1517,283.38,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14154.1557,282.8,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14154.1578,328.25,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14154.1597,326.69,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14154.1613,296.42,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14154.1632,342.9,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14154.1663,313.29,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14154.1726,282.13,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14154.1777,323.69,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14154.1794,358.05,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14154.1806,423.38,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14154.1826,335.72,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14154.1846,427.35,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14154.1895,355.22,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14154.1952,386.15,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14154.199,429.15,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14154.2005,351.35,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14154.2023,378.56,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14154.2121,420.02,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14154.2199,414.33,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14154.23,369.56,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14154.2543,390.15,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14154.2655,448.5,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14154.2794,369.75,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14154.2897,407.14,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14154.304,368.47,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14154.3056,377.56,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14154.3241,380.08,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14154.328,352.52,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14154.3294,375.02,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14154.3474,429.94,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14154.3505,376.58,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14154.3563,388.56,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14154.3624,426.7,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14154.3692,431.56,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14154.3769,385.71,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14154.4036,389.32,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14154.4094,363.79,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14154.4175,382.9,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14154.4352,381.3,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14154.4386,452.7,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14154.4548,401.72,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14154.4578,404.23,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14154.4761,446.43,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14154.4797,390.55,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14154.4862,388.34,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14154.4865,421.5,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14154.5015,422.87,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14154.5062,399.21,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14154.5184,399.44,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14154.5376,454.95,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14154.5448,384.26,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14154.5519,439.53,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14154.5809,450.76,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14154.5814,389.74,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14154.5998,400.24,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14154.6041,409.97,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14154.6121,368.33,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14154.6282,455.25,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14154.6322,387.93,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14154.6344,381.33,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14154.6446,448.67,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14154.6493,386.01,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14154.6726,429.5,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14154.6807,418.29,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14154.6836,379.01,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14154.697,437.59,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14154.7042,434.62,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14154.7045,428.84,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14154.7141,429.97,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14154.7272,444.37,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14154.745,439.93,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14154.763,424.93,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14154.7733,417.33,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14154.7774,464.46,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14154.7892,460.26,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14154.793,415.55,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14154.8005,410.44,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14154.801,467.02,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14154.8166,437.19,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14154.8566,404.64,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14154.8621,432.98,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14154.8703,426.59,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14154.8746,401.55,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14154.8914,395.3,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14154.9055,428.85,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14154.908,393.06,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14154.918,399.07,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14154.9227,401.73,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14154.9245,438.74,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14154.9291,450.53,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14154.9713,378.15,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14154.9805,413.3,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14154.9915,417.73,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14154.9926,412.85,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14155.0001,447.9,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14155.0143,417.35,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14155.0157,402.23,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14155.0203,421.42,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14155.0318,385.22,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14155.0354,403.55,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14155.0627,398.15,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14155.0836,373.46,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14155.0933,358.58,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14155.099,360.9,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14155.1022,357.51,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14155.1335,342.65,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14155.1346,382.46,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14155.1389,357.39,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14155.1442,368.45,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14155.1716,318.26,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14155.1851,359.18,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14155.1881,339.06,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14155.1908,343.27,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14155.2086,299.77,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14155.2111,341.04,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14155.242,299.48,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14155.2498,311.62,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14155.2539,297.35,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14155.2613,301.85,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14155.2681,306.46,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14155.2762,303.64,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14155.2868,297.12,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14155.2953,302.49,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14155.2971,294.64,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14155.3012,298.0,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14155.3172,298.23,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14155.3245,293.89,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14155.3346,285.49,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14155.3495,282.03,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14155.3633,270.43,1,200,user-svc-2
+2. Carga alta,2,Round Robin,14155.3797,259.39,1,200,user-svc-1
+2. Carga alta,2,Round Robin,14155.3939,247.51,1,200,user-svc-2
+3. Congestionado,1,Least Connections,14161.5803,63.53,1,200,user-svc-1
+3. Congestionado,1,Least Connections,14161.582,474.47,1,200,user-svc-2
+3. Congestionado,1,Least Connections,14161.5837,79.04,1,200,user-svc-1
+3. Congestionado,1,Least Connections,14161.588,104.32,1,200,user-svc-1
+3. Congestionado,1,Least Connections,14161.5941,532.82,1,200,user-svc-2
+3. Congestionado,1,Least Connections,14161.6017,97.81,1,200,user-svc-1
+3. Congestionado,1,Least Connections,14161.6039,104.23,1,200,user-svc-1
+3. Congestionado,1,Least Connections,14161.6073,561.71,1,200,user-svc-2
+3. Congestionado,1,Least Connections,14161.6098,111.55,1,200,user-svc-1
+3. Congestionado,1,Least Connections,14161.6147,113.97,1,200,user-svc-1
+3. Congestionado,1,Least Connections,14161.6199,132.21,1,200,user-svc-1
+3. Congestionado,1,Least Connections,14161.6218,119.59,1,200,user-svc-1
+3. Congestionado,1,Least Connections,14161.6228,138.12,1,200,user-svc-1
+3. Congestionado,1,Least Connections,14161.6248,160.6,1,200,user-svc-1
+3. Congestionado,1,Least Connections,14161.6283,146.56,1,200,user-svc-1
+3. Congestionado,1,Least Connections,14161.6428,163.23,1,200,user-svc-1
+3. Congestionado,1,Least Connections,14161.6439,147.8,1,200,user-svc-1
+3. Congestionado,1,Least Connections,14161.6458,175.86,1,200,user-svc-1
+3. Congestionado,1,Least Connections,14161.6461,181.15,1,200,user-svc-1
+3. Congestionado,1,Least Connections,14161.6489,189.92,1,200,user-svc-1
+3. Congestionado,1,Least Connections,14161.6522,194.02,1,200,user-svc-1
+3. Congestionado,1,Least Connections,14161.6629,634.17,1,200,user-svc-2
+3. Congestionado,1,Least Connections,14161.6924,167.49,1,200,user-svc-1
+3. Congestionado,1,Least Connections,14161.6996,164.41,1,200,user-svc-1
+3. Congestionado,1,Least Connections,14161.7083,171.97,1,200,user-svc-1
+3. Congestionado,1,Least Connections,14161.7215,156.85,1,200,user-svc-1
+3. Congestionado,1,Least Connections,14161.7288,167.35,1,200,user-svc-1
+3. Congestionado,1,Least Connections,14161.7415,167.69,1,200,user-svc-1
+3. Congestionado,1,Least Connections,14161.7522,161.65,1,200,user-svc-1
+3. Congestionado,1,Least Connections,14161.761,158.78,1,200,user-svc-1
+3. Congestionado,1,Least Connections,14161.7749,561.23,1,200,user-svc-2
+3. Congestionado,1,Least Connections,14161.7856,137.37,1,200,user-svc-1
+3. Congestionado,1,Least Connections,14161.7918,146.64,1,200,user-svc-1
+3. Congestionado,1,Least Connections,14161.8061,142.41,1,200,user-svc-1
+3. Congestionado,1,Least Connections,14161.8218,137.11,1,200,user-svc-1
+3. Congestionado,1,Least Connections,14161.8279,177.22,1,200,user-svc-1
+3. Congestionado,1,Least Connections,14161.839,152.11,1,200,user-svc-1
+3. Congestionado,1,Least Connections,14161.8463,166.73,1,200,user-svc-1
+3. Congestionado,1,Least Connections,14161.8601,158.93,1,200,user-svc-1
+3. Congestionado,1,Least Connections,14161.8641,111.19,1,200,user-svc-1
+3. Congestionado,1,Least Connections,14161.8786,527.6,1,200,user-svc-2
+3. Congestionado,1,Least Connections,14161.8803,133.47,1,200,user-svc-1
+3. Congestionado,1,Least Connections,14161.8962,129.02,1,200,user-svc-1
+3. Congestionado,1,Least Connections,14161.9093,161.59,1,200,user-svc-1
+3. Congestionado,1,Least Connections,14161.914,133.01,1,200,user-svc-1
+3. Congestionado,1,Least Connections,14161.9199,114.58,1,200,user-svc-1
+3. Congestionado,1,Least Connections,14161.923,145.9,1,200,user-svc-1
+3. Congestionado,1,Least Connections,14161.9385,126.0,1,200,user-svc-1
+3. Congestionado,1,Least Connections,14161.9487,133.68,1,200,user-svc-1
+3. Congestionado,1,Least Connections,14161.959,126.68,1,200,user-svc-1
+3. Congestionado,1,Least Connections,14161.9758,134.15,1,200,user-svc-1
+3. Congestionado,1,Least Connections,14161.9912,109.92,1,200,user-svc-1
+3. Congestionado,1,Least Connections,14162.0052,136.73,1,200,user-svc-1
+3. Congestionado,1,Least Connections,14162.0132,112.49,1,200,user-svc-1
+3. Congestionado,1,Least Connections,14162.0139,137.63,1,200,user-svc-1
+3. Congestionado,1,Least Connections,14162.0193,164.22,1,200,user-svc-1
+3. Congestionado,1,Least Connections,14162.0254,124.44,1,200,user-svc-1
+3. Congestionado,1,Least Connections,14162.0347,134.06,1,200,user-svc-1
+3. Congestionado,1,Least Connections,14162.0471,530.45,1,200,user-svc-2
+3. Congestionado,1,Least Connections,14162.0566,125.77,1,200,user-svc-1
+3. Congestionado,1,Least Connections,14162.0646,141.52,1,200,user-svc-1
+3. Congestionado,1,Least Connections,14162.069,128.51,1,200,user-svc-1
+3. Congestionado,1,Least Connections,14162.0709,144.9,1,200,user-svc-1
+3. Congestionado,1,Least Connections,14162.0824,148.19,1,200,user-svc-1
+3. Congestionado,1,Least Connections,14162.0859,142.66,1,200,user-svc-1
+3. Congestionado,1,Least Connections,14162.1012,143.5,1,200,user-svc-1
+3. Congestionado,1,Least Connections,14162.11,135.17,1,200,user-svc-1
+3. Congestionado,1,Least Connections,14162.1257,123.8,1,200,user-svc-1
+3. Congestionado,1,Least Connections,14162.127,123.92,1,200,user-svc-1
+3. Congestionado,1,Least Connections,14162.1421,114.62,1,200,user-svc-1
+3. Congestionado,1,Least Connections,14162.1499,131.24,1,200,user-svc-1
+3. Congestionado,1,Least Connections,14162.1516,123.61,1,200,user-svc-1
+3. Congestionado,1,Least Connections,14162.1688,136.96,1,200,user-svc-1
+3. Congestionado,1,Least Connections,14162.1691,130.48,1,200,user-svc-1
+3. Congestionado,1,Least Connections,14162.1827,551.32,1,200,user-svc-2
+3. Congestionado,1,Least Connections,14162.1836,123.19,1,200,user-svc-1
+3. Congestionado,1,Least Connections,14162.1976,115.83,1,200,user-svc-1
+3. Congestionado,1,Least Connections,14162.2062,114.56,1,200,user-svc-1
+3. Congestionado,1,Least Connections,14162.2159,101.5,1,200,user-svc-1
+3. Congestionado,1,Least Connections,14162.2287,93.06,1,200,user-svc-1
+3. Congestionado,1,Round Robin,14164.2116,39.02,1,200,user-svc-1
+3. Congestionado,1,Round Robin,14164.2129,561.75,1,200,user-svc-2
+3. Congestionado,1,Round Robin,14164.2135,49.08,1,200,user-svc-1
+3. Congestionado,1,Round Robin,14164.2165,572.44,1,200,user-svc-2
+3. Congestionado,1,Round Robin,14164.2235,87.96,1,200,user-svc-1
+3. Congestionado,1,Round Robin,14164.2299,636.51,1,200,user-svc-2
+3. Congestionado,1,Round Robin,14164.2324,108.83,1,200,user-svc-1
+3. Congestionado,1,Round Robin,14164.2336,88.01,1,200,user-svc-1
+3. Congestionado,1,Round Robin,14164.2375,669.75,1,200,user-svc-2
+3. Congestionado,1,Round Robin,14164.2456,647.1,1,200,user-svc-2
+3. Congestionado,1,Round Robin,14164.2507,83.39,1,200,user-svc-1
+3. Congestionado,1,Round Robin,14164.2538,656.6,1,200,user-svc-2
+3. Congestionado,1,Round Robin,14164.2541,129.08,1,200,user-svc-1
+3. Congestionado,1,Round Robin,14164.2579,663.58,1,200,user-svc-2
+3. Congestionado,1,Round Robin,14164.2628,105.62,1,200,user-svc-1
+3. Congestionado,1,Round Robin,14164.2659,787.39,1,200,user-svc-2
+3. Congestionado,1,Round Robin,14164.2706,136.74,1,200,user-svc-1
+3. Congestionado,1,Round Robin,14164.2735,114.87,1,200,user-svc-1
+3. Congestionado,1,Round Robin,14164.2745,719.86,1,200,user-svc-2
+3. Congestionado,1,Round Robin,14164.2765,133.34,1,200,user-svc-1
+3. Congestionado,1,Round Robin,14164.2784,791.3,1,200,user-svc-2
+3. Congestionado,1,Round Robin,14164.2859,716.3,1,200,user-svc-2
+3. Congestionado,1,Round Robin,14164.3115,127.37,1,200,user-svc-1
+3. Congestionado,1,Round Robin,14164.3217,773.79,1,200,user-svc-2
+3. Congestionado,1,Round Robin,14164.3344,123.6,1,200,user-svc-1
+3. Congestionado,1,Round Robin,14164.3413,756.87,1,200,user-svc-2
+3. Congestionado,1,Round Robin,14164.3685,731.4,1,200,user-svc-2
+3. Congestionado,1,Round Robin,14164.3834,73.7,1,200,user-svc-1
+3. Congestionado,1,Round Robin,14164.3884,69.77,1,200,user-svc-1
+3. Congestionado,1,Round Robin,14164.4074,863.92,1,200,user-svc-2
+3. Congestionado,1,Round Robin,14164.4099,57.08,1,200,user-svc-1
+3. Congestionado,1,Round Robin,14164.439,848.2,1,200,user-svc-2
+3. Congestionado,1,Round Robin,14164.4571,37.43,1,200,user-svc-1
+3. Congestionado,1,Round Robin,14164.4581,795.01,1,200,user-svc-2
+3. Congestionado,1,Round Robin,14164.4583,834.8,1,200,user-svc-2
+3. Congestionado,1,Round Robin,14164.4671,22.91,1,200,user-svc-1
+3. Congestionado,1,Round Robin,14164.4901,17.9,1,200,user-svc-1
+3. Congestionado,1,Round Robin,14164.4946,859.12,1,200,user-svc-2
+3. Congestionado,1,Round Robin,14164.5081,11.84,1,200,user-svc-1
+3. Congestionado,1,Round Robin,14164.52,845.45,1,200,user-svc-2
+3. Congestionado,1,Round Robin,14164.7752,20.95,1,200,user-svc-1
+3. Congestionado,1,Round Robin,14164.789,617.83,1,200,user-svc-2
+3. Congestionado,1,Round Robin,14164.7963,15.22,1,200,user-svc-1
+3. Congestionado,1,Round Robin,14164.8115,642.76,1,200,user-svc-2
+3. Congestionado,1,Round Robin,14164.8665,32.96,1,200,user-svc-1
+3. Congestionado,1,Round Robin,14164.8928,667.43,1,200,user-svc-2
+3. Congestionado,1,Round Robin,14164.8995,46.37,1,200,user-svc-1
+3. Congestionado,1,Round Robin,14164.9073,650.37,1,200,user-svc-2
+3. Congestionado,1,Round Robin,14164.9105,75.06,1,200,user-svc-1
+3. Congestionado,1,Round Robin,14164.9215,640.6,1,200,user-svc-2
+3. Congestionado,1,Round Robin,14164.946,65.65,1,200,user-svc-1
+3. Congestionado,1,Round Robin,14164.9857,42.14,1,200,user-svc-1
+3. Congestionado,1,Round Robin,14164.9944,577.1,1,200,user-svc-2
+3. Congestionado,1,Round Robin,14165.0022,659.93,1,200,user-svc-2
+3. Congestionado,1,Round Robin,14165.0118,20.64,1,200,user-svc-1
+3. Congestionado,1,Round Robin,14165.028,537.8,1,200,user-svc-2
+3. Congestionado,1,Round Robin,14165.0325,14.57,1,200,user-svc-1
+3. Congestionado,1,Round Robin,14165.0472,545.33,1,200,user-svc-2
+3. Congestionado,1,Round Robin,14165.0533,20.73,1,200,user-svc-1
+3. Congestionado,1,Round Robin,14165.0697,592.6,1,200,user-svc-2
+3. Congestionado,1,Round Robin,14165.0743,26.89,1,200,user-svc-1
+3. Congestionado,1,Round Robin,14165.0956,563.42,1,200,user-svc-2
+3. Congestionado,1,Round Robin,14165.0983,26.24,1,200,user-svc-1
+3. Congestionado,1,Round Robin,14165.1,594.76,1,200,user-svc-2
+3. Congestionado,1,Round Robin,14165.1012,27.68,1,200,user-svc-1
+3. Congestionado,1,Round Robin,14165.1246,630.13,1,200,user-svc-2
+3. Congestionado,1,Round Robin,14165.129,13.88,1,200,user-svc-1
+3. Congestionado,1,Round Robin,14165.1429,613.28,1,200,user-svc-2
+3. Congestionado,1,Round Robin,14165.2537,17.35,1,200,user-svc-1
+3. Congestionado,1,Round Robin,14165.2712,27.14,1,200,user-svc-1
+3. Congestionado,1,Round Robin,14165.2714,521.99,1,200,user-svc-2
+3. Congestionado,1,Round Robin,14165.2873,570.49,1,200,user-svc-2
+3. Congestionado,1,Round Robin,14165.2938,21.19,1,200,user-svc-1
+3. Congestionado,1,Round Robin,14165.2984,559.7,1,200,user-svc-2
+3. Congestionado,1,Round Robin,14165.3151,21.43,1,200,user-svc-1
+3. Congestionado,1,Round Robin,14165.3366,623.07,1,200,user-svc-2
+3. Congestionado,1,Round Robin,14165.3539,30.73,1,200,user-svc-1
+3. Congestionado,1,Round Robin,14165.3658,592.73,1,200,user-svc-2
+3. Congestionado,1,Round Robin,14165.3847,29.79,1,200,user-svc-1
+3. Congestionado,1,Round Robin,14165.407,553.36,1,200,user-svc-2
+3. Congestionado,1,GNN-RL,14167.0913,31.19,1,200,user-svc-1
+3. Congestionado,1,GNN-RL,14167.093,499.13,1,200,user-svc-2
+3. Congestionado,1,GNN-RL,14167.0949,70.35,1,200,user-svc-1
+3. Congestionado,1,GNN-RL,14167.1002,81.13,1,200,user-svc-1
+3. Congestionado,1,GNN-RL,14167.1085,76.74,1,200,user-svc-1
+3. Congestionado,1,GNN-RL,14167.1148,84.21,1,200,user-svc-1
+3. Congestionado,1,GNN-RL,14167.1159,129.03,1,200,user-svc-1
+3. Congestionado,1,GNN-RL,14167.1191,223.11,1,200,user-svc-1
+3. Congestionado,1,GNN-RL,14167.1226,190.03,1,200,user-svc-1
+3. Congestionado,1,GNN-RL,14167.1281,249.59,1,200,user-svc-1
+3. Congestionado,1,GNN-RL,14167.1292,208.02,1,200,user-svc-1
+3. Congestionado,1,GNN-RL,14167.1307,115.51,1,200,user-svc-1
+3. Congestionado,1,GNN-RL,14167.1335,159.97,1,200,user-svc-1
+3. Congestionado,1,GNN-RL,14167.1381,100.11,1,200,user-svc-1
+3. Congestionado,1,GNN-RL,14167.1408,186.06,1,200,user-svc-1
+3. Congestionado,1,GNN-RL,14167.1427,594.03,1,200,user-svc-2
+3. Congestionado,1,GNN-RL,14167.1437,144.24,1,200,user-svc-1
+3. Congestionado,1,GNN-RL,14167.1456,210.8,1,200,user-svc-1
+3. Congestionado,1,GNN-RL,14167.1475,262.55,1,200,user-svc-1
+3. Congestionado,1,GNN-RL,14167.1515,154.82,1,200,user-svc-1
+3. Congestionado,1,GNN-RL,14167.1537,691.46,1,200,user-svc-2
+3. Congestionado,1,GNN-RL,14167.1654,245.28,1,200,user-svc-1
+3. Congestionado,1,GNN-RL,14167.1814,243.86,1,200,user-svc-1
+3. Congestionado,1,GNN-RL,14167.1853,208.63,1,200,user-svc-1
+3. Congestionado,1,GNN-RL,14167.1994,238.72,1,200,user-svc-1
+3. Congestionado,1,GNN-RL,14167.2383,215.63,1,200,user-svc-1
+3. Congestionado,1,GNN-RL,14167.245,642.54,1,200,user-svc-2
+3. Congestionado,1,GNN-RL,14167.2463,216.86,1,200,user-svc-1
+3. Congestionado,1,GNN-RL,14167.288,193.3,1,200,user-svc-1
+3. Congestionado,1,GNN-RL,14167.2936,181.45,1,200,user-svc-1
+3. Congestionado,1,GNN-RL,14167.3065,181.52,1,200,user-svc-1
+3. Congestionado,1,GNN-RL,14167.3128,180.22,1,200,user-svc-1
+3. Congestionado,1,GNN-RL,14167.3269,184.04,1,200,user-svc-1
+3. Congestionado,1,GNN-RL,14167.3373,180.78,1,200,user-svc-1
+3. Congestionado,1,GNN-RL,14167.3423,181.93,1,200,user-svc-1
+3. Congestionado,1,GNN-RL,14167.3565,246.95,1,200,user-svc-1
+3. Congestionado,1,GNN-RL,14167.3779,187.61,1,200,user-svc-1
+3. Congestionado,1,GNN-RL,14167.3941,166.97,1,200,user-svc-1
+3. Congestionado,1,GNN-RL,14167.4101,278.88,1,200,user-svc-1
+3. Congestionado,1,GNN-RL,14167.4108,218.69,1,200,user-svc-1
+3. Congestionado,1,GNN-RL,14167.4254,230.94,1,200,user-svc-1
+3. Congestionado,1,GNN-RL,14167.4382,175.37,1,200,user-svc-1
+3. Congestionado,1,GNN-RL,14167.454,211.13,1,200,user-svc-1
+3. Congestionado,1,GNN-RL,14167.4633,214.55,1,200,user-svc-1
+3. Congestionado,1,GNN-RL,14167.4751,540.44,1,200,user-svc-2
+3. Congestionado,1,GNN-RL,14167.4816,225.81,1,200,user-svc-1
+3. Congestionado,1,GNN-RL,14167.4881,183.72,1,200,user-svc-1
+3. Congestionado,1,GNN-RL,14167.4931,140.42,1,200,user-svc-1
+3. Congestionado,1,GNN-RL,14167.5111,542.5,1,200,user-svc-2
+3. Congestionado,1,GNN-RL,14167.5184,168.74,1,200,user-svc-1
+3. Congestionado,1,GNN-RL,14167.5243,206.84,1,200,user-svc-1
+3. Congestionado,1,GNN-RL,14167.5612,167.32,1,200,user-svc-1
+3. Congestionado,1,GNN-RL,14167.5655,153.19,1,200,user-svc-1
+3. Congestionado,1,GNN-RL,14167.5922,146.3,1,200,user-svc-1
+3. Congestionado,1,GNN-RL,14167.6035,192.87,1,200,user-svc-1
+3. Congestionado,1,GNN-RL,14167.6137,135.29,1,200,user-svc-1
+3. Congestionado,1,GNN-RL,14167.6296,134.99,1,200,user-svc-1
+3. Congestionado,1,GNN-RL,14167.6336,148.99,1,200,user-svc-1
+3. Congestionado,1,GNN-RL,14167.6564,144.97,1,200,user-svc-1
+3. Congestionado,1,GNN-RL,14167.6653,160.06,1,200,user-svc-1
+3. Congestionado,1,GNN-RL,14167.6719,156.67,1,200,user-svc-1
+3. Congestionado,1,GNN-RL,14167.6779,143.39,1,200,user-svc-1
+3. Congestionado,1,GNN-RL,14167.6873,165.89,1,200,user-svc-1
+3. Congestionado,1,GNN-RL,14167.6891,188.63,1,200,user-svc-1
+3. Congestionado,1,GNN-RL,14167.7076,202.53,1,200,user-svc-1
+3. Congestionado,1,GNN-RL,14167.7188,192.8,1,200,user-svc-1
+3. Congestionado,1,GNN-RL,14167.7286,227.87,1,200,user-svc-1
+3. Congestionado,1,GNN-RL,14167.7313,193.19,1,200,user-svc-1
+3. Congestionado,1,GNN-RL,14167.7368,168.83,1,200,user-svc-1
+3. Congestionado,1,GNN-RL,14167.7386,232.55,1,200,user-svc-1
+3. Congestionado,1,GNN-RL,14167.7491,182.46,1,200,user-svc-1
+3. Congestionado,1,GNN-RL,14167.7646,573.69,1,200,user-svc-2
+3. Congestionado,1,GNN-RL,14167.7827,155.12,1,200,user-svc-1
+3. Congestionado,1,GNN-RL,14167.7966,156.51,1,200,user-svc-1
+3. Congestionado,1,GNN-RL,14167.8015,170.63,1,200,user-svc-1
+3. Congestionado,1,GNN-RL,14167.8214,159.63,1,200,user-svc-1
+3. Congestionado,1,GNN-RL,14167.8254,162.37,1,200,user-svc-1
+3. Congestionado,1,GNN-RL,14167.8287,185.54,1,200,user-svc-1
+3. Congestionado,1,GNN-RL,14167.8453,175.56,1,200,user-svc-1
+3. Congestionado,1,GNN-RL,14167.8533,171.64,1,200,user-svc-1
+3. Congestionado,2,Round Robin,14169.7196,471.02,1,200,user-svc-2
+3. Congestionado,2,Round Robin,14169.7209,25.15,1,200,user-svc-1
+3. Congestionado,2,Round Robin,14169.722,40.32,1,200,user-svc-1
+3. Congestionado,2,Round Robin,14169.7274,555.92,1,200,user-svc-2
+3. Congestionado,2,Round Robin,14169.7346,556.34,1,200,user-svc-2
+3. Congestionado,2,Round Robin,14169.7391,92.06,1,200,user-svc-1
+3. Congestionado,2,Round Robin,14169.7426,612.36,1,200,user-svc-2
+3. Congestionado,2,Round Robin,14169.7462,134.4,1,200,user-svc-1
+3. Congestionado,2,Round Robin,14169.752,81.6,1,200,user-svc-1
+3. Congestionado,2,Round Robin,14169.7549,611.49,1,200,user-svc-2
+3. Congestionado,2,Round Robin,14169.7571,70.06,1,200,user-svc-1
+3. Congestionado,2,Round Robin,14169.7584,118.03,1,200,user-svc-1
+3. Congestionado,2,Round Robin,14169.7612,94.02,1,200,user-svc-1
+3. Congestionado,2,Round Robin,14169.764,695.48,1,200,user-svc-2
+3. Congestionado,2,Round Robin,14169.7649,613.5,1,200,user-svc-2
+3. Congestionado,2,Round Robin,14169.7672,716.27,1,200,user-svc-2
+3. Congestionado,2,Round Robin,14169.7706,143.64,1,200,user-svc-1
+3. Congestionado,2,Round Robin,14169.7717,687.41,1,200,user-svc-2
+3. Congestionado,2,Round Robin,14169.7734,698.2,1,200,user-svc-2
+3. Congestionado,2,Round Robin,14169.7777,76.45,1,200,user-svc-1
+3. Congestionado,2,Round Robin,14169.78,123.13,1,200,user-svc-1
+3. Congestionado,2,Round Robin,14169.7813,783.81,1,200,user-svc-2
+3. Congestionado,2,Round Robin,14169.8272,112.89,1,200,user-svc-1
+3. Congestionado,2,Round Robin,14169.8313,99.57,1,200,user-svc-1
+3. Congestionado,2,Round Robin,14169.8337,719.82,1,200,user-svc-2
+3. Congestionado,2,Round Robin,14169.8542,734.83,1,200,user-svc-2
+3. Congestionado,2,Round Robin,14169.8553,100.83,1,200,user-svc-1
+3. Congestionado,2,Round Robin,14169.8765,775.2,1,200,user-svc-2
+3. Congestionado,2,Round Robin,14169.8806,82.3,1,200,user-svc-1
+3. Congestionado,2,Round Robin,14169.9033,773.62,1,200,user-svc-2
+3. Congestionado,2,Round Robin,14169.9143,67.54,1,200,user-svc-1
+3. Congestionado,2,Round Robin,14169.9309,764.73,1,200,user-svc-2
+3. Congestionado,2,Round Robin,14169.9406,36.11,1,200,user-svc-1
+3. Congestionado,2,Round Robin,14169.9564,797.98,1,200,user-svc-2
+3. Congestionado,2,Round Robin,14169.963,26.09,1,200,user-svc-1
+3. Congestionado,2,Round Robin,14169.9768,789.06,1,200,user-svc-2
+3. Congestionado,2,Round Robin,14169.9821,24.4,1,200,user-svc-1
+3. Congestionado,2,Round Robin,14169.9893,781.91,1,200,user-svc-2
+3. Congestionado,2,Round Robin,14170.0073,10.96,1,200,user-svc-1
+3. Congestionado,2,Round Robin,14170.0183,739.96,1,200,user-svc-2
+3. Congestionado,2,Round Robin,14170.1907,13.24,1,200,user-svc-1
+3. Congestionado,2,Round Robin,14170.2044,702.9,1,200,user-svc-2
+3. Congestionado,2,Round Robin,14170.2834,17.85,1,200,user-svc-1
+3. Congestionado,2,Round Robin,14170.291,602.24,1,200,user-svc-2
+3. Congestionado,2,Round Robin,14170.3014,12.13,1,200,user-svc-1
+3. Congestionado,2,Round Robin,14170.3136,574.19,1,200,user-svc-2
+3. Congestionado,2,Round Robin,14170.3552,20.91,1,200,user-svc-1
+3. Congestionado,2,Round Robin,14170.3665,541.72,1,200,user-svc-2
+3. Congestionado,2,Round Robin,14170.3762,25.11,1,200,user-svc-1
+3. Congestionado,2,Round Robin,14170.3785,676.31,1,200,user-svc-2
+3. Congestionado,2,Round Robin,14170.4014,12.06,1,200,user-svc-1
+3. Congestionado,2,Round Robin,14170.4136,644.78,1,200,user-svc-2
+3. Congestionado,2,Round Robin,14170.4593,31.23,1,200,user-svc-1
+3. Congestionado,2,Round Robin,14170.4596,607.15,1,200,user-svc-2
+3. Congestionado,2,Round Robin,14170.4716,38.35,1,200,user-svc-1
+3. Congestionado,2,Round Robin,14170.4836,583.43,1,200,user-svc-2
+3. Congestionado,2,Round Robin,14170.4907,27.48,1,200,user-svc-1
+3. Congestionado,2,Round Robin,14170.5101,579.08,1,200,user-svc-2
+3. Congestionado,2,Round Robin,14170.5183,12.15,1,200,user-svc-1
+3. Congestionado,2,Round Robin,14170.5305,562.37,1,200,user-svc-2
+3. Congestionado,2,Round Robin,14170.554,16.99,1,200,user-svc-1
+3. Congestionado,2,Round Robin,14170.5652,592.68,1,200,user-svc-2
+3. Congestionado,2,Round Robin,14170.571,18.49,1,200,user-svc-1
+3. Congestionado,2,Round Robin,14170.5892,567.67,1,200,user-svc-2
+3. Congestionado,2,Round Robin,14170.5896,17.81,1,200,user-svc-1
+3. Congestionado,2,Round Robin,14170.6074,586.65,1,200,user-svc-2
+3. Congestionado,2,Round Robin,14170.6522,12.99,1,200,user-svc-1
+3. Congestionado,2,Round Robin,14170.6653,593.05,1,200,user-svc-2
+3. Congestionado,2,Round Robin,14170.6771,12.61,1,200,user-svc-1
+3. Congestionado,2,Round Robin,14170.6898,573.85,1,200,user-svc-2
+3. Congestionado,2,Round Robin,14170.6958,13.56,1,200,user-svc-1
+3. Congestionado,2,Round Robin,14170.7094,574.98,1,200,user-svc-2
+3. Congestionado,2,Round Robin,14170.755,33.38,1,200,user-svc-1
+3. Congestionado,2,Round Robin,14170.7584,599.6,1,200,user-svc-2
+3. Congestionado,2,Round Robin,14170.766,33.35,1,200,user-svc-1
+3. Congestionado,2,Round Robin,14170.7713,587.37,1,200,user-svc-2
+3. Congestionado,2,Round Robin,14170.7885,17.11,1,200,user-svc-1
+3. Congestionado,2,Round Robin,14170.7994,654.93,1,200,user-svc-2
+3. Congestionado,2,Round Robin,14170.8056,13.45,1,200,user-svc-1
+3. Congestionado,2,Round Robin,14170.8192,638.3,1,200,user-svc-2
+3. Congestionado,2,Least Connections,14172.5638,38.23,1,200,user-svc-1
+3. Congestionado,2,Least Connections,14172.5654,477.07,1,200,user-svc-2
+3. Congestionado,2,Least Connections,14172.5671,115.79,1,200,user-svc-1
+3. Congestionado,2,Least Connections,14172.5705,160.12,1,200,user-svc-1
+3. Congestionado,2,Least Connections,14172.5799,156.0,1,200,user-svc-1
+3. Congestionado,2,Least Connections,14172.5851,574.45,1,200,user-svc-2
+3. Congestionado,2,Least Connections,14172.5956,611.62,1,200,user-svc-2
+3. Congestionado,2,Least Connections,14172.6001,162.63,1,200,user-svc-1
+3. Congestionado,2,Least Connections,14172.6021,146.79,1,200,user-svc-1
+3. Congestionado,2,Least Connections,14172.6096,209.13,1,200,user-svc-1
+3. Congestionado,2,Least Connections,14172.6175,203.71,1,200,user-svc-1
+3. Congestionado,2,Least Connections,14172.6185,227.02,1,200,user-svc-1
+3. Congestionado,2,Least Connections,14172.6202,211.86,1,200,user-svc-1
+3. Congestionado,2,Least Connections,14172.6229,705.23,1,200,user-svc-2
+3. Congestionado,2,Least Connections,14172.6274,241.35,1,200,user-svc-1
+3. Congestionado,2,Least Connections,14172.6283,213.97,1,200,user-svc-1
+3. Congestionado,2,Least Connections,14172.6301,233.41,1,200,user-svc-1
+3. Congestionado,2,Least Connections,14172.6342,246.47,1,200,user-svc-1
+3. Congestionado,2,Least Connections,14172.636,280.75,1,200,user-svc-1
+3. Congestionado,2,Least Connections,14172.6382,273.77,1,200,user-svc-1
+3. Congestionado,2,Least Connections,14172.6427,257.55,1,200,user-svc-1
+3. Congestionado,2,Least Connections,14172.683,271.09,1,200,user-svc-1
+3. Congestionado,2,Least Connections,14172.7308,223.05,1,200,user-svc-1
+3. Congestionado,2,Least Connections,14172.7374,212.97,1,200,user-svc-1
+3. Congestionado,2,Least Connections,14172.749,226.08,1,200,user-svc-1
+3. Congestionado,2,Least Connections,14172.7628,637.2,1,200,user-svc-2
+3. Congestionado,2,Least Connections,14172.8188,173.38,1,200,user-svc-1
+3. Congestionado,2,Least Connections,14172.8213,197.59,1,200,user-svc-1
+3. Congestionado,2,Least Connections,14172.8322,177.85,1,200,user-svc-1
+3. Congestionado,2,Least Connections,14172.8424,186.84,1,200,user-svc-1
+3. Congestionado,2,Least Connections,14172.8456,190.81,1,200,user-svc-1
+3. Congestionado,2,Least Connections,14172.8636,195.5,1,200,user-svc-1
+3. Congestionado,2,Least Connections,14172.8689,178.19,1,200,user-svc-1
+3. Congestionado,2,Least Connections,14172.8808,624.28,1,200,user-svc-2
+3. Congestionado,2,Least Connections,14172.9004,209.6,1,200,user-svc-1
+3. Congestionado,2,Least Connections,14172.9121,198.17,1,200,user-svc-1
+3. Congestionado,2,Least Connections,14172.9169,220.38,1,200,user-svc-1
+3. Congestionado,2,Least Connections,14172.9505,200.16,1,200,user-svc-1
+3. Congestionado,2,Least Connections,14172.9539,238.45,1,200,user-svc-1
+3. Congestionado,2,Least Connections,14172.9541,213.07,1,200,user-svc-1
+3. Congestionado,2,Least Connections,14172.9752,628.92,1,200,user-svc-2
+3. Congestionado,2,Least Connections,14172.9923,195.1,1,200,user-svc-1
+3. Congestionado,2,Least Connections,14173.0101,206.31,1,200,user-svc-1
+3. Congestionado,2,Least Connections,14173.0189,277.75,1,200,user-svc-1
+3. Congestionado,2,Least Connections,14173.0293,228.89,1,200,user-svc-1
+3. Congestionado,2,Least Connections,14173.0365,266.72,1,200,user-svc-1
+3. Congestionado,2,Least Connections,14173.0425,235.49,1,200,user-svc-1
+3. Congestionado,2,Least Connections,14173.0472,255.8,1,200,user-svc-1
+3. Congestionado,2,Least Connections,14173.0596,261.7,1,200,user-svc-1
+3. Congestionado,2,Least Connections,14173.11,241.49,1,200,user-svc-1
+3. Congestionado,2,Least Connections,14173.1104,266.99,1,200,user-svc-1
+3. Congestionado,2,Least Connections,14173.1374,274.95,1,200,user-svc-1
+3. Congestionado,2,Least Connections,14173.1507,238.92,1,200,user-svc-1
+3. Congestionado,2,Least Connections,14173.1596,248.56,1,200,user-svc-1
+3. Congestionado,2,Least Connections,14173.1673,362.14,1,200,user-svc-1
+3. Congestionado,2,Least Connections,14173.1877,247.0,1,200,user-svc-1
+3. Congestionado,2,Least Connections,14173.1925,667.94,1,200,user-svc-2
+3. Congestionado,2,Least Connections,14173.2074,262.45,1,200,user-svc-1
+3. Congestionado,2,Least Connections,14173.2165,255.72,1,200,user-svc-1
+3. Congestionado,2,Least Connections,14173.2583,241.12,1,200,user-svc-1
+3. Congestionado,2,Least Connections,14173.2782,636.27,1,200,user-svc-2
+3. Congestionado,2,Least Connections,14173.2968,230.21,1,200,user-svc-1
+3. Congestionado,2,Least Connections,14173.3031,238.66,1,200,user-svc-1
+3. Congestionado,2,Least Connections,14173.3033,241.1,1,200,user-svc-1
+3. Congestionado,2,Least Connections,14173.3214,229.74,1,200,user-svc-1
+3. Congestionado,2,Least Connections,14173.3282,244.78,1,200,user-svc-1
+3. Congestionado,2,Least Connections,14173.3516,621.7,1,200,user-svc-2
+3. Congestionado,2,Least Connections,14173.3775,187.3,1,200,user-svc-1
+3. Congestionado,2,Least Connections,14173.3898,225.64,1,200,user-svc-1
+3. Congestionado,2,Least Connections,14173.4001,215.15,1,200,user-svc-1
+3. Congestionado,2,Least Connections,14173.4084,188.93,1,200,user-svc-1
+3. Congestionado,2,Least Connections,14173.4126,198.08,1,200,user-svc-1
+3. Congestionado,2,Least Connections,14173.4347,186.95,1,200,user-svc-1
+3. Congestionado,2,Least Connections,14173.4699,571.86,1,200,user-svc-2
+3. Congestionado,2,Least Connections,14173.4724,151.65,1,200,user-svc-1
+3. Congestionado,2,Least Connections,14173.4995,147.0,1,200,user-svc-1
+3. Congestionado,2,Least Connections,14173.5052,132.34,1,200,user-svc-1
+3. Congestionado,2,Least Connections,14173.5271,110.73,1,200,user-svc-1
+3. Congestionado,2,Least Connections,14173.5295,113.98,1,200,user-svc-1
+3. Congestionado,2,Least Connections,14173.5418,109.58,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14175.2217,27.19,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14175.223,51.1,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14175.2244,39.52,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14175.2277,100.42,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14175.238,93.82,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14175.2431,158.4,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14175.2452,120.19,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14175.2485,142.34,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14175.2494,164.99,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14175.2516,181.61,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14175.2559,164.55,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14175.2613,303.81,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14175.264,153.79,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14175.2654,186.87,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14175.2677,198.76,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14175.2741,261.47,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14175.2775,277.32,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14175.2814,287.29,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14175.2855,197.79,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14175.2866,152.63,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14175.288,366.43,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14175.2891,207.16,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14175.2957,339.75,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14175.3283,276.39,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14175.3321,365.74,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14175.3655,330.64,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14175.391,450.97,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14175.4016,348.54,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14175.4145,326.85,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14175.4179,356.95,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14175.4206,403.68,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14175.4334,379.65,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14175.4393,421.82,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14175.4523,448.26,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14175.4666,451.59,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14175.4834,523.36,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14175.4965,480.61,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14175.5357,530.76,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14175.5549,505.91,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14175.5656,399.2,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14175.5687,420.99,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14175.6047,509.79,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14175.6356,561.5,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14175.6545,431.58,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14175.6962,486.63,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14175.6979,311.47,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14175.7414,341.77,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14175.7503,727.13,1,200,user-svc-2
+3. Congestionado,2,GNN-RL,14175.775,410.19,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14175.8131,381.91,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14175.8244,355.32,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14175.8421,338.28,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14175.8612,323.69,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14175.9007,449.54,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14175.9182,278.5,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14175.965,219.63,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14175.9772,219.06,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14175.9899,343.56,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14176.0069,438.58,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14176.0095,200.16,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14176.0613,198.37,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14176.0666,212.57,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14176.0833,323.54,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14176.0863,319.57,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14176.1146,345.75,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14176.18,385.05,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14176.1805,392.21,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14176.1829,288.43,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14176.1847,333.3,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14176.185,463.88,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14176.1852,462.09,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14176.1951,452.43,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14176.1964,451.33,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14176.1968,436.41,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14176.1971,462.44,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14176.2098,507.26,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14176.2608,430.42,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14176.2793,885.98,1,200,user-svc-2
+3. Congestionado,2,GNN-RL,14176.3336,388.76,1,200,user-svc-1
+3. Congestionado,2,GNN-RL,14176.3508,397.47,1,200,user-svc-1
