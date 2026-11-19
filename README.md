@@ -10,8 +10,7 @@ El proyecto compara cuantitativamente dos balanceadores tradicionales (**Round R
 ## 🏛️ Arquitectura del Sistema
 
 La infraestructura está completamente containerizada mediante **Docker Compose** y consta de 5 microservicios independientes.
-
-![Arquitectura del Sistema](Arquitectura.png)
+<img width="2800" height="1640" alt="arquitectura" src="https://github.com/user-attachments/assets/61696c0a-a234-40c1-92ef-ac29e87540e6" />
 
 # 🚀 Algoritmos de Balanceo
 
